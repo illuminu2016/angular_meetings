@@ -12,13 +12,7 @@
       'app.dashboard',
       'app.login',
       'app.notifications'
-    ])
-    .config(
-      ['uiGmapGoogleMapApiProvider', function(GoogleMapApiProviders) {
-        GoogleMapApiProviders.configure({
-          china: true
-        });
-      }]);
+    ]);
 
   //account
 
