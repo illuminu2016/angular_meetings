@@ -7,11 +7,9 @@
   angular.module('app')
     .config(Config);
 
-  Config.$inject = ['$stateProvider', '$urlRouterProvider', '$ionicConfigProvider', 'accountResolveProvider'];
+  Config.$inject = ['$stateProvider', '$urlRouterProvider', 'accountResolveProvider'];
 
-  function Config($stateProvider, $urlRouterProvider, $ionicConfigProvider, accountResolveProvider) {
-
-    $ionicConfigProvider.tabs.position('bottom');
+  function Config($stateProvider, $urlRouterProvider, accountResolveProvider) {
 
     $stateProvider
       .state('login', {

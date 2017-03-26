@@ -8,10 +8,9 @@
 
       .factory('loginService', LoginService);
 
-    LoginService.$inject = ['$q', '$window'];
+    LoginService.$inject = ['$q'];
 
-    function LoginService($q, $window) {
-      // Style map
+    function LoginService($q) {
 
       function loginInApp(username, password) {
         var requestObj = {
