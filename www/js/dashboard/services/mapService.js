@@ -149,7 +149,7 @@
 
     return {
       getMapDayStyle: getMapStyle,
-      getUserLocation: getUserLocation
+      getLocation: getUserLocation
     };
   }
 

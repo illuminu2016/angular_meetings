@@ -30,8 +30,7 @@
       }
 
       return {
-        login: loginInApp,
-        getLocation: getUserLocation
+        login: loginInApp
       };
     }
 

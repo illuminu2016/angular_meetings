@@ -2,457 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baaabd65-f46b-4e78-a337-3f5b32339675" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icons/female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icons/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icons/loading-gif34.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icons/man.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icons/rolling.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icons/static-loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/adam.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/ben.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/ionic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/location.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/max.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/mike.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/msp_login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/perry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/.travis/deploy.enc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/spec/js/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js.gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-markerwithlabel/examples/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_action-sheet.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_animations.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_backdrop.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_badge.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_bar.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_button-bar.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_button.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_checkbox.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_form.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_grid.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_items.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_list.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_loading.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_menu.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_mixins.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_modal.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_platform.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_popover.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_popup.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_progress.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_radio.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_range.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_refresher.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_reset.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_scaffolding.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_select.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_slide-box.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_slides.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_spinner.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_tabs.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_toggle.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_transitions.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_type.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_util.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/_variables.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/app.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/056929aa469225fc1b5fcfb87059fd329d95d5a6/ionic.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/5c21cba4b93a7036b1f514b2e8aaa677afbe2fa3/_ionicons-font.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/5c21cba4b93a7036b1f514b2e8aaa677afbe2fa3/_ionicons-icons.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/5c21cba4b93a7036b1f514b2e8aaa677afbe2fa3/_ionicons-variables.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/.sass-cache/5c21cba4b93a7036b1f514b2e8aaa677afbe2fa3/ionicons.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/fonts/ionicons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/fonts/ionicons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/fonts/ionicons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/screenshot.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/buttonBg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/buttonBgHover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/detach.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/detachHover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/disable.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/disable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/disableHover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/disableHover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/downActive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/downHover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/errorIcon-sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/errorIcon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/errorIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/firebug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/group.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/infoIcon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/infoIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/loading_16.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/min.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/minHover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/offHover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/pixel_transparent.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/search.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/shadow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/shadow2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/shadowAlpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabHoverLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabHoverMid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabHoverRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabMenuCheckbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabMenuPin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabMenuRadio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabMenuTarget.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabMenuTargetHover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabMid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tabRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/textEditorBorders.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/textEditorBorders.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/textEditorCorners.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/textEditorCorners.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/titlebarMid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/toolbarMid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tree_close.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/tree_open.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/twistyClosed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/twistyOpen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/upActive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/upHover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/warningIcon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/warningIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/examples/markerclustererplus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/conv30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/conv40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/conv50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/heart30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/heart40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/heart50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/m1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/m2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/m3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/m4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/m5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/people35.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/people45.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/images/people55.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/meetings.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hooks/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hooks/after_prepare/010_add_platform_class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ionic.config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/ionic.app.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icons/License.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icons/gears.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/liciente.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/SlidingMarker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-animate/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-animate/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-animate/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-animate/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-animate/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/.eslintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/Gruntfile.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/ISSUE_TEMPLATE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps-street-view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps-street-view.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/karma.acceptance.conf.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/karma.conf.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/spec/coffee/bootstrap/bootstrap.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/spec/coffee/bootstrap/google-api-mock.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/spec/coffee/bootstrap/google-map-spec-controller.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/spec/coffee/bootstrap/initiator.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/spec/coffee/helpers/helper.mockEvents.spec.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/spec/coffee/helpers/helper.polyline.spec.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-google-maps/spec/js/acceptance/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/dist/angular-simple-logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/dist/angular-simple-logger.light.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/dist/angular-simple-logger.light.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/dist/angular-simple-logger.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/dist/browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/dist/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-simple-logger/dist/index.light.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/api/angular-ui-router.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/release/angular-ui-router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/release/angular-ui-router.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/resolve.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/state.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/stateDirectives.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/stateFilters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/templateFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/urlMatcherFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/urlRouter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/viewDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/viewScroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/angular/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/directive.es/angular-google-maps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-infobox/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-infobox/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-infobox/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-infobox/dist/infobox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-infobox/dist/infobox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-keydragzoom/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-keydragzoom/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-keydragzoom/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-keydragzoom/dist/keydragzoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-keydragzoom/dist/keydragzoom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-markerwithlabel/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-markerwithlabel/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-markerwithlabel/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-markerwithlabel/dist/markerwithlabel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/google-maps-utility-library-v3-markerwithlabel/dist/markerwithlabel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/config.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/css/ionic.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/css/ionic.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/css/ionicons/ionicons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/fonts/ionicons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular-ui/angular-ui-router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular-ui/angular-ui-router.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-animate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-animate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-resource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-resource.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-sanitize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-sanitize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_action-sheet.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_animations.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_backdrop.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_badge.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_button-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_checkbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_form.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_grid.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_items.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_loading.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_modal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_platform.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_popover.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_popup.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_progress.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_radio.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_range.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_refresher.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_scaffolding.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_select.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_slide-box.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_slides.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_spinner.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_tabs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_toggle.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_transitions.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_type.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_util.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/ionic.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/_ionicons-font.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/_ionicons-icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/_ionicons-variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/ionicons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/ionic/version.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/jquery.easing.1.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/CONTRIBUTORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/examples/richmarker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/reference.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/src/richmarker-compiled.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/js-rich-marker/src/richmarker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/.github/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/.jscsrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/.markdown-doctest-setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/CHANGELOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.core.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.fp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.fp.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/lodash.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/dist/mapping.fp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/doc/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/fp/_baseConvert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/fp/_convertBrowser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/fp/_mapping.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/fp/placeholder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/common/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/common/mapping.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/common/minify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/common/uglify.options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/common/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/build-dist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/build-doc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/build-modules.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/doc/wiki.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/modules/_falseOptions.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/modules/_util.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/modules/alias.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/modules/category.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/modules/convert.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/modules/fp.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/modules/module.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/fp/template/modules/thru.jst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/main/build-dist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/main/build-doc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/main/build-modules.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lib/main/build-site.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/lodash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/perf/asset/perf-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/perf/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/perf/perf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/asset/test-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/asset/worker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/backbone.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/fp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/remove.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/saucelabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/test-fp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/test/underscore.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/backbone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/collection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/noconflict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/setup/dom-setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/setup/environment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/backbone/test/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/debugger.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/firebug-1.3a2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/firebug.IE6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/firebug.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/firebug.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/html.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/skin/xp/roundCorner.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/firebug-lite/src/firebug-lite-debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/json-js/json2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/arrays.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/chaining.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/collections.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/cross-document.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/objects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/test/utility.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/underscore-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/vendor/underscore/underscore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/lodash/yarn.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerAnimate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/dist/markerclusterer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/examples/advanced_example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/examples/events_example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/examples/simple_example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/examples/speed_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/examples/speed_test_example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/src/data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/src/markerclusterer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/src/markerclusterer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerclustererplus/src/markerclusterer_packaged.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/lib/markerwithlabel.terikon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/service-worker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/views/account.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/views/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/views/notifications.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/views/tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/dashboard/services/mapService.js" afterPath="$PROJECT_DIR$/www/js/dashboard/services/mapService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/login/services/loginService.js" afterPath="$PROJECT_DIR$/www/js/login/services/loginService.js" />
     </list>
     <ignored path="meetings.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -476,8 +27,8 @@
       <file leaf-file-name="loginService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/login/services/loginService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5555553">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="18" />
+            <state vertical-scroll-proportion="-18.518518">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
               <folding>
                 <element signature="e#0#55#0" expanded="false" />
               </folding>
@@ -485,11 +36,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.routes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mapService.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/dashboard/services/mapService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7172996">
+              <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#55#0" expanded="false" />
+                <element signature="e#299#3574#0" expanded="false" />
+                <element signature="e#3604#3716#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/app.routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19127989">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.6666665">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
                 <element signature="e#0#55#0" expanded="false" />
               </folding>
@@ -538,9 +103,9 @@
         <option value="$PROJECT_DIR$/www/js/app.routes.js" />
         <option value="$PROJECT_DIR$/www/js/dashboard/controllers/DashboardCtrl.js" />
         <option value="$PROJECT_DIR$/www/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/www/js/resolves.js" />
         <option value="$PROJECT_DIR$/www/js/login/services/loginService.js" />
         <option value="$PROJECT_DIR$/www/js/dashboard/services/mapService.js" />
-        <option value="$PROJECT_DIR$/www/js/resolves.js" />
       </list>
     </option>
   </component>
@@ -719,6 +284,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meetings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meetings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dashboard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -746,32 +337,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meetings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meetings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1155,18 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/dashboard/services/mapService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#55#0" expanded="false" />
-            <element signature="e#299#3574#0" expanded="false" />
-            <element signature="e#3604#3716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/run.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11954993">
@@ -1187,22 +740,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/login/services/loginService.js">
+    <entry file="file://$PROJECT_DIR$/www/js/app.routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5555553">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="18" />
+        <state vertical-scroll-proportion="-5.6666665">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
             <element signature="e#0#55#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.routes.js">
+    <entry file="file://$PROJECT_DIR$/www/js/login/services/loginService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19127989">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="-18.518518">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding>
             <element signature="e#0#55#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/dashboard/services/mapService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7172996">
+          <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#55#0" expanded="false" />
+            <element signature="e#299#3574#0" expanded="false" />
+            <element signature="e#3604#3716#0" expanded="false" />
           </folding>
         </state>
       </provider>
