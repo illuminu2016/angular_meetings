@@ -27,8 +27,8 @@
           password: null
         },
         resolve: {
-          account: accountResolveProvider.login,
-          location: accountResolveProvider.getLocation,
+/*          account: accountResolveProvider.login,
+          location: accountResolveProvider.getLocation,*/
           mapStyle: accountResolveProvider.getMapStyle
         }
       })

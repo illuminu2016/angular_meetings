@@ -7,9 +7,9 @@
   angular.module('app.dashboard.controllers', [])
     .controller('DashboardCtrl', DashboardCtrl);
 
-  DashboardCtrl.$inject = ['$injector', '$scope', 'location', 'mapStyle'];
+  DashboardCtrl.$inject = ['$injector', '$scope', 'mapStyle'];
 
-  function DashboardCtrl($injector, $scope, location, mapStyle) {
+  function DashboardCtrl($injector, $scope, mapStyle) {
     /**
      * Injections
      */
@@ -39,6 +39,17 @@
           longitude: "27.5884",
           genre: "male"
         }];
+
+      $scope.dataHolder.marker = {
+        id: "41",
+        pos: {
+          latitude: "47.1564",
+          longitude: "27.5901"
+        },
+        options: {
+          icon: "icons/female.png"
+        }
+      }
     }
 
     /**
@@ -55,9 +66,13 @@
         styles: mapStyle
       },
       mapCenter: {
-        latitude: location.coords.latitude,
-        longitude: location.coords.longitude
+        latitude: "47.1564",
+        longitude: "27.5901"
       },
+      /*      mapCenter: {
+       latitude: location.coords.latitude,
+       longitude: location.coords.longitude
+       },*/
       circle: {
         radius: 45,
         stroke: {
@@ -70,11 +85,16 @@
           opacity: 0.35
         },
         center: {
-          latitude: location.coords.latitude,
-          longitude: location.coords.longitude
+          latitude: "47.1564",
+          longitude: "27.5901"
         },
+        /*        center: {
+         latitude: location.coords.latitude,
+         longitude: location.coords.longitude
+         },*/
         visible: true
-      }
+      },
+      marker: null
     };
 
     /**
@@ -85,7 +105,8 @@
      * Init Method
      */
     (function init() {
-      updateUsersLocation($scope.dataHolder.map);
+
+      updateUsersLocation();
     })();
   }
 })();
