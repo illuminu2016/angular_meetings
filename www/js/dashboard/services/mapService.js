@@ -8,9 +8,9 @@
 
     .factory('mapService', MapService);
 
-  MapService.$inject = ['$q', '$window'];
+  MapService.$inject = ['$q', '$window', '$cordovaGeolocation'];
 
-  function MapService($q, $window) {
+  function MapService($q, $window, $cordovaGeolocation) {
     // Style map
     var styledMapType = [
         {elementType: 'geometry', stylers: [{color: '#e8e8e8'}]},
@@ -138,13 +138,24 @@
     function getUserLocation() {
       var deferred = $q.defer();
 
-      if ($window.navigator.geolocation) {
-        $window.navigator.geolocation.getCurrentPosition(function (position) {
-          deferred.resolve(position);
-        });
+      var posOptions = {timeout: 10000, enableHighAccuracy: false};
 
-        return deferred.promise;
-      }
+        $cordovaGeolocation
+          .getCurrentPosition(posOptions)
+          .then(function (response) {
+
+            var position = {
+              latitude: response.coords.latitude,
+              longitude: response.coords.longitude
+            };
+
+            deferred.resolve(position);
+
+          }, function (err) {
+            console.log('location error');
+          });
+
+      return deferred.promise;
     }
 
     return {

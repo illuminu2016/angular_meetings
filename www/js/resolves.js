@@ -37,6 +37,8 @@
       function ($stateParams, $q, mapService) {
         var defer = $q.defer();
 
+        console.log('---get location  mapService---');
+
         mapService.getLocation()
           .then(function (response) {
             defer.resolve(response);

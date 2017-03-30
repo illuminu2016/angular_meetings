@@ -8,9 +8,9 @@
 
       .factory('loginService', LoginService);
 
-    LoginService.$inject = ['$q'];
+    LoginService.$inject = ['$q', '$timeout'];
 
-    function LoginService($q) {
+    function LoginService($q, $timeout) {
 
       function loginInApp(username, password) {
         var requestObj = {
@@ -22,7 +22,10 @@
         if (!!username && !!password) {
           var response = '200';
           //TODO
-          deferred.resolve(response);
+          $timeout(function() {
+            deferred.resolve(response);
+          }, 100);
+
         }
 
         return deferred.promise;
