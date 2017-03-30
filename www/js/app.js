@@ -7,12 +7,21 @@
 
   angular.module('app', [
       'ionic',
+      'ngCordova',
       'uiGmapgoogle-maps',
+      'app.common',
       'app.account',
       'app.dashboard',
       'app.login',
       'app.notifications'
     ]);
+
+  //common
+  angular.module('app.common', [
+    'app.common.directives'
+  ]);
+
+  angular.module('app.common.directives', []);
 
   //account
 
