@@ -7,9 +7,9 @@
   angular.module('app.dashboard.controllers', [])
     .controller('DashboardCtrl', DashboardCtrl);
 
-  DashboardCtrl.$inject = ['$injector', '$scope', '$timeout', 'mapStyle', 'location'];
+  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location'];
 
-  function DashboardCtrl($injector, $scope, $timeout, mapStyle, location) {
+  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location) {
     /**
      * Injections
      */
@@ -56,7 +56,7 @@
       var direction = 1;
       var rMin = 25, rMax = 40;
 
-      setInterval(function() {
+      setInterval(function () {
         var refreshIntervalId = setInterval(function () {
 
           var radius = $scope.dataHolder.circle.radius;
@@ -78,7 +78,8 @@
 
     $scope.dataHolder = {
       map: {
-        zoom: 19
+        zoom: 19,
+        refresh: false
       },
       options: {
         disableDefaultUI: true,
@@ -117,8 +118,14 @@
      * Init Method
      */
     (function init() {
+      $timeout(function () {
+        $ionicLoading.hide();
+        navigator.vibrate(1000);
+      }, 2000);
 
+      updateUsersLocation();
       setSonar();
+
     })();
   }
 })();

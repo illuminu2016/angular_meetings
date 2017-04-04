@@ -8,6 +8,7 @@
   angular.module('app', [
       'ionic',
       'ngCordova',
+      'ngCordovaOauth',
       'uiGmapgoogle-maps',
       'app.common',
       'app.account',

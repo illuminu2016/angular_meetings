@@ -8,9 +8,9 @@
 
     .factory('mapService', MapService);
 
-  MapService.$inject = ['$q', '$window', '$cordovaGeolocation'];
+  MapService.$inject = ['$q', '$window', '$cordovaGeolocation', '$ionicLoading'];
 
-  function MapService($q, $window, $cordovaGeolocation) {
+  function MapService($q, $window, $cordovaGeolocation, $ionicLoading) {
     // Style map
     var styledMapType = [
         {elementType: 'geometry', stylers: [{color: '#e8e8e8'}]},
@@ -119,7 +119,7 @@
         {
           featureType: 'water',
           elementType: 'labels.text.fill',
-          stylers: [{color: '#92998d'}]
+          stylers: [{color: '#+'}]
         },
         {
           elementType: 'labels',
@@ -138,7 +138,7 @@
     function getUserLocation() {
       var deferred = $q.defer();
 
-      var posOptions = {timeout: 10000, enableHighAccuracy: false};
+      var posOptions = {timeout: 10000, enableHighAccuracy: true};
 
         $cordovaGeolocation
           .getCurrentPosition(posOptions)
@@ -149,10 +149,13 @@
               longitude: response.coords.longitude
             };
 
+            console.log('position', position);
+
             deferred.resolve(position);
 
           }, function (err) {
-            console.log('location error');
+            $ionicLoading.hide();
+            console.log(err);
           });
 
       return deferred.promise;

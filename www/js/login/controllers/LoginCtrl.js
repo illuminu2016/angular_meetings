@@ -7,9 +7,9 @@
   angular.module('app.login.controllers', [])
     .controller('LoginCtrl', LoginCtrl);
 
-  LoginCtrl.$inject = ['$injector', '$scope'];
+  LoginCtrl.$inject = ['$scope', '$state', '$ionicLoading', '$cordovaOauth', '$window'];
 
-  function LoginCtrl($injector, $scope) {
+  function LoginCtrl($scope, $state, $ionicLoading, $cordovaOauth, $window) {
     /**
      * Injections
      */
@@ -30,11 +30,26 @@
      * Scope methods
      */
 
+    $scope.login = function() {
+      $ionicLoading.show({
+          template: '<ion-spinner icon="android" class="loader-app"></ion-spinner><div class="loader-text">Loading...</div>'
+       });
+
+      $cordovaOauth.facebook("1637916846222464", ["public_profile"]).then(function (result) {
+        $window.localStorage.accessToken = result.access_token;
+        $state.transitionTo('tab.dashboard', '', { reload: true, inherit: true, notify: true });//reload
+      }, function (error) {
+        $ionicLoading.hide();
+        console.log(error);
+      });
+
+    };
+
+
     /**
      * Init Method
      */
     (function init() {
-
     })();
   }
 })();
