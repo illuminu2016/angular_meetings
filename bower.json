@@ -8,6 +8,10 @@
     "angular-simple-logger": "^0.1.7"
   },
   "dependencies": {
+<<<<<<< HEAD
     "ng-cordova-oauth": "^0.3.0"
+=======
+    "ngCordova": "^0.1.27-alpha"
+>>>>>>> acc0d48beecef0d868d287dbdf4388828b4720be
   }
 }

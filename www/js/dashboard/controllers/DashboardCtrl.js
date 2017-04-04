@@ -78,8 +78,7 @@
 
     $scope.dataHolder = {
       map: {
-        zoom: 19,
-        refresh: false
+        zoom: 16
       },
       options: {
         disableDefaultUI: true,
