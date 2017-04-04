@@ -7,9 +7,9 @@
   angular.module('app')
     .run(Run);
 
-    Run.$inject = ['$ionicPlatform'];
+    Run.$inject = ['$ionicPlatform', '$rootScope'];
 
-    function Run($ionicPlatform) {
+    function Run($ionicPlatform, $rootScope) {
       $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -21,6 +21,12 @@
         if (window.StatusBar) {
           // org.apache.cordova.statusbar required
           StatusBar.styleDefault();
+        }
+      });
+
+      $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+        if ((toState.name === 'login') && (fromState.name === 'tab.dashboard')) {
+          event.preventDefault();
         }
       });
     }

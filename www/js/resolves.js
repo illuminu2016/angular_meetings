@@ -14,11 +14,11 @@
       return self;
     }];
 
-    this.login = ['$stateParams', '$q', 'loginService',
+    this.loginFb = ['$stateParams', '$q', 'loginService',
       function ($stateParams, $q, loginService) {
         var defer = $q.defer();
 
-        loginService.login($stateParams.username, $stateParams.password)
+        loginService.loginFb()
           .then(function (response) {
             defer.resolve(response);
           })
@@ -36,8 +36,6 @@
     this.getLocation = ['$stateParams', '$q', 'mapService',
       function ($stateParams, $q, mapService) {
         var defer = $q.defer();
-
-        console.log('---get location  mapService---');
 
         mapService.getLocation()
           .then(function (response) {
