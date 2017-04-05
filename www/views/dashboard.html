@@ -3,11 +3,48 @@
     <ui-gmap-google-map center="dataHolder.mapCenter" zoom="dataHolder.map.zoom" options="dataHolder.options">
       <ui-gmap-map-type options="squaresMapType"></ui-gmap-map-type>
       <ui-gmap-circle center="dataHolder.circle.center" radius="dataHolder.circle.radius" visible="dataHolder.circle.visible" stroke="dataHolder.circle.stroke" fill="dataHolder.circle.fill"></ui-gmap-circle>
-      <ui-gmap-marker
-        idKey="dataHolder.marker.id"
-        coords="dataHolder.marker.pos"
-        options="dataHolder.marker.options"
+      <ui-gmap-marker ng-repeat="item in dataHolder.marker"
+        idKey="item.id"
+        coords="item.pos"
+        options="item.options"
+        click="item.clickMarker()"
+        type="'cluster'" 
+        typeOptions="'dataHolder.options.cluster'"
       >
+        <ui-gmap-window 
+          options="windowOptions" 
+          control="googlemap"
+          >
+          <div class="height-100">
+            <div class="clearfix user-window-top">
+              <div class="user-avatar fleft height-100">
+                <img src="../img/jane-doe.png" class="height-100" alt="profile image"/>
+              </div>
+              <div class="user-details fleft">
+                <div class="margin-bottom-5">
+                  <i class="icon ion-person"></i>
+                  {{dataHolder.userDetails.name}}
+                </div>
+                <div class="margin-bottom-5">
+                  <i class="icon ion-chatbubbles"></i>
+                  {{dataHolder.userDetails.age}} years
+                </div>
+                <div class="margin-bottom-5">
+                  <i class="icon ion-android-pin"></i>
+                  {{dataHolder.userDetails.location}}
+                </div>
+             </div>
+            </div>
+            <div class="clearfix user-window-bottom">
+              <div class="fleft width-50">
+                <a hef="#" ng-click="$parent.viewUser()"><i class="icon ion-eye"></i></a>
+              </div>
+              <div class="fleft width-50">
+                <a hef="#" ng-click="$parent.contactUser()"><i class="icon ion-chatbubbles"></i></a>
+             </div>
+            </div>
+          </div>
+        </ui-gmap-window>
       </ui-gmap-marker>
     </ui-gmap-google-map>
   </ion-content>

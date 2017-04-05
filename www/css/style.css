@@ -1,1 +1,65 @@
 /* Empty. Add your own CSS if you like */
+
+/* General */
+.fleft {
+	float: left;
+}
+.height-100 {
+	height: 100%;
+}
+.width-50 {
+	width: 50%;
+}
+.margin-bottom-5 {
+	margin-bottom: 5px;
+}
+.text-center {
+	text-align: center;
+}
+
+.infobox > img {
+	position: absolute !important;
+	right: 0;
+	top: 0;
+}
+.user-window-top {
+	height: 70%;
+}
+.user-window-bottom {
+	height: 30%;
+	font-size: 22px;
+	text-align: center;
+}
+.user-avatar {
+	width: 40%;
+} 
+.user-avatar img {
+	width: 100%;
+	border: 1px solid #FFFFFF;
+}
+.user-avatar a {
+	width: 100%;
+	display: block;
+	border: 1px solid #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+	color: #000000;
+}
+.user-avatar a:hover {
+	color: #FFFFFF;
+}
+.user-details {
+	width: 60%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding-left: 10px;
+}
+.user-window-bottom a {
+	cursor: pointer;
+	color: #000000;
+}
+.user-window-bottom a:hover {
+	color: red;
+}
