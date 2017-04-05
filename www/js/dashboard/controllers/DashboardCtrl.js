@@ -39,8 +39,8 @@
           longitude: "27.5884",
           genre: "male"
         }];
-      $scope.googlemap = {};
-      $scope.dataHolder.marker = [
+      
+      $scope.dataHolder.markers = [
         {
           id: "41",
           pos: {
@@ -93,49 +93,6 @@
         }
       ];
 
-      // Close the other InfoWindows on marker click
-      angular.forEach($scope.dataHolder.marker, function(item) {
-        item.clickMarker =  function(e) {
-          var windows = $scope.googlemap.getChildWindows();
-
-          for (var i = 0; i < windows.length; i++){
-              windows[i].hideWindow()
-          }
-        }
-      });
-
-      $scope.dataHolder.userDetails = {
-        name: "Ana",
-        age: "25",
-        genre: "female",
-        location: "Iasi",
-        interests: "Clubs, cars & trips"
-      }
-
-      $scope.windowOptions = {
-        boxClass: "infobox",
-        boxStyle: {
-          backgroundColor: "#8ab0ab",
-          border: "1px solid #8ab023",
-          borderRadius: "5px",
-          minWidth: "180px",
-          padding: "5px",
-          width: "0px",
-          height: "100px"
-        },
-        // content: "Text",
-        disableAutoPan: false,
-        maxWidth: 0,
-        pixelOffset: {width: 20, height: -40},
-        zIndex: null,
-        //closeBoxMargin: "10px",
-        // closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
-        // infoBoxClearance: new google.maps.Size(1, 1),
-        isHidden: false,
-        //pane: "floatPane",
-        enableEventPropagation: true
-      }
-
     }
 
     function setSonar() {
@@ -184,7 +141,7 @@
           }],
           averageCenter: true,
           clusterClass: 'cluster-icon'
-      }
+        }
       },
       mapCenter: {
         latitude: location.latitude,
@@ -207,7 +164,64 @@
         },
         visible: true
       },
-      marker: null
+      //marker: null,
+      markersEvents: {
+          click: function(marker, eventName, model) {
+              $scope.dataHolder.window.model = model;
+              $scope.dataHolder.window.show = true;
+            }
+      },
+      window: {
+        marker: {},
+        show: false,
+        closeClick: function() {
+          this.show = false;
+        },
+        options: {
+          boxClass: "infobox",
+          boxStyle: {
+            backgroundColor: "#8ab0ab",
+            border: "1px solid #8ab023",
+            borderRadius: "5px",
+            minWidth: "180px",
+            padding: "5px",
+            width: "0px",
+            height: "100px"
+          },
+          // content: "Text",
+          disableAutoPan: false,
+          maxWidth: 0,
+          pixelOffset: {width: 20, height: -40},
+          zIndex: null,
+          //closeBoxMargin: "10px",
+          // closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
+          // infoBoxClearance: new google.maps.Size(1, 1),
+          isHidden: false,
+          //pane: "floatPane",
+          enableEventPropagation: true
+        } 
+      },
+      userDetails: {
+        name: "Ana",
+        age: "25",
+        genre: "female",
+        location: "Iasi",
+        interests: "Clubs, cars & trips"
+      },
+      cluster: {
+        minimumClusterSize : 10,
+        zoomOnClick: true,
+        styles: [{
+            url: "icons/m4-fab.png",
+            width:60,
+            height:60,
+            textColor: 'white',
+            textSize: 14,
+            fontFamily: 'Open Sans'
+        }],
+        averageCenter: true,
+        clusterClass: 'cluster-icon'
+      }
     };
 
     /**
