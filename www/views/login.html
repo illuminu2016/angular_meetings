@@ -1,27 +1,36 @@
 <ion-view>
   <ion-content>
-    <div class="list card">
 
-      <div class="item item-image">
-        <img src="/android_asset/www/img/location.gif">
-      </div>
+    <ion-slide-box>
+      <ion-slide>
+        <p class="slider-header-placeholder">Text 1</p>
+        <div class="slider-image-placeholder">
+          <div>
+            Placeholder image 1
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <p class="slider-header-placeholder">Text 2</p>
+        <div class="slider-image-placeholder">
+          <div>
+            Placeholder image 2
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <p class="slider-header-placeholder">Text 3</p>
+        <div class="slider-image-placeholder">
+          <div>
+            Placeholder image 3
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
 
-    </div>
-    <div class="list padding">
-      <label class="item item-input">
-        <span class="input-label">Username</span>
-        <input type="text" ng-model="username">
-      </label>
-      <label class="item item-input">
-        <span class="input-label">Password</span>
-        <input type="password" ng-model="password">
-      </label>
-    </div>
 
-    <div class="padding">
-      <button class="button button-block button-positive" ui-sref="tab.dashboard({username: username, password: password})">
-        Sign In
-      </button>
+    <div class="login-fb">
+      <button ng-click="login()" class="button button-block button-positive">Login in with Facebook</button>
     </div>
 
   </ion-content>
