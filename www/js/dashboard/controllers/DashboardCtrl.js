@@ -40,16 +40,59 @@
           genre: "male"
         }];
 
-      $scope.dataHolder.marker = {
-        id: "41",
-        pos: {
-          latitude: "47.1564",
-          longitude: "27.5901"
+      $scope.dataHolder.markers = [
+        {
+          id: "41",
+          pos: {
+            latitude: "47.1574",
+            longitude: "27.5901"
+          },
+          options: {
+            icon: "icons/male_marker_20.png"
+          }
         },
-        options: {
-          icon: "icons/female.png"
+        {
+          id: "42",
+          pos: {
+            latitude: "47.1508",
+            longitude: "27.5991"
+          },
+          options: {
+            icon: "icons/male_marker_20.png"
+          }
+        },
+        {
+          id: "43",
+          pos: {
+            latitude: "47.1585",
+            longitude: "27.5972"
+          },
+          options: {
+            icon: "icons/female_marker_20.png"
+          }
+        },
+        {
+          id: "44",
+          pos: {
+            latitude: "47.1579",
+            longitude: "27.5991"
+          },
+          options: {
+            icon: "icons/female_marker_20.png"
+          }
+        },
+        {
+          id: "45",
+          pos: {
+            latitude: "47.1570",
+            longitude: "27.5920"
+          },
+          options: {
+            icon: "icons/female_marker_20.png"
+          }
         }
-      }
+      ];
+
     }
 
     function setSonar() {
@@ -78,13 +121,27 @@
 
     $scope.dataHolder = {
       map: {
-        zoom: 19,
+        zoom: 14,
         refresh: false
       },
       options: {
         disableDefaultUI: true,
         scrollwheel: true,
-        styles: mapStyle
+        styles: mapStyle,
+        cluster: {
+          minimumClusterSize : 10,
+          zoomOnClick: true,
+          styles: [{
+              url: "icons/female_marker_20.png",
+              width:60,
+              height:60,
+              textColor: 'white',
+              textSize: 14,
+              fontFamily: 'Open Sans'
+          }],
+          averageCenter: true,
+          clusterClass: 'cluster-icon'
+        }
       },
       mapCenter: {
         latitude: location.latitude,
@@ -107,12 +164,72 @@
         },
         visible: true
       },
-      marker: null
+      markersEvents: {
+          click: function(marker, eventName, model) {
+              $scope.dataHolder.window.model = model;
+              $scope.dataHolder.window.show = true;
+            }
+      },
+      window: {
+        marker: {},
+        show: false,
+        closeClick: function() {
+          this.show = false;
+        },
+        options: {
+          boxClass: "infobox",
+          boxStyle: {
+            backgroundColor: "#8ab0ab",
+            border: "1px solid #8ab023",
+            borderRadius: "5px",
+            minWidth: "180px",
+            padding: "5px",
+            width: "0px",
+            height: "100px"
+          },
+          disableAutoPan: false,
+          maxWidth: 0,
+          pixelOffset: {width: 20, height: -40},
+          zIndex: null,
+          isHidden: false,
+          enableEventPropagation: true
+        }
+      },
+      userDetails: {
+        name: "Ana",
+        age: "25",
+        genre: "female",
+        location: "Iasi",
+        interests: "Clubs, cars & trips"
+      },
+      cluster: {
+        minimumClusterSize : 10,
+        zoomOnClick: true,
+        styles: [{
+            url: "icons/m4-fab.png",
+            width:60,
+            height:60,
+            textColor: 'white',
+            textSize: 14,
+            fontFamily: 'Open Sans'
+        }],
+        averageCenter: true,
+        clusterClass: 'cluster-icon'
+      }
     };
 
     /**
      * Scope methods
      */
+
+     $scope.viewUser = function() {
+        alert("Go to user's profile page.");
+     };
+
+     $scope.contactUser = function() {
+        alert("Contact the user.");
+     };
+
     /**
      * Init Method
      */
@@ -124,7 +241,7 @@
 
       updateUsersLocation();
       setSonar();
-
+      updateUsersLocation();
     })();
   }
 })();
