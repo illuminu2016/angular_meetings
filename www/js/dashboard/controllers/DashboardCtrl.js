@@ -39,7 +39,7 @@
           longitude: "27.5884",
           genre: "male"
         }];
-      
+
       $scope.dataHolder.markers = [
         {
           id: "41",
@@ -193,7 +193,7 @@
           zIndex: null,
           isHidden: false,
           enableEventPropagation: true
-        } 
+        }
       },
       userDetails: {
         name: "Ana",
