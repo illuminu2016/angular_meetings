@@ -113,7 +113,6 @@
     /**
      * Scope methods
      */
-
     /**
      * Init Method
      */
