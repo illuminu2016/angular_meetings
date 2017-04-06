@@ -164,7 +164,6 @@
         },
         visible: true
       },
-      //marker: null,
       markersEvents: {
           click: function(marker, eventName, model) {
               $scope.dataHolder.window.model = model;
@@ -188,16 +187,11 @@
             width: "0px",
             height: "100px"
           },
-          // content: "Text",
           disableAutoPan: false,
           maxWidth: 0,
           pixelOffset: {width: 20, height: -40},
           zIndex: null,
-          //closeBoxMargin: "10px",
-          // closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
-          // infoBoxClearance: new google.maps.Size(1, 1),
           isHidden: false,
-          //pane: "floatPane",
           enableEventPropagation: true
         } 
       },

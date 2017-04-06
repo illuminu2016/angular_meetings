@@ -14,7 +14,7 @@
     // Style map
     var styledMapTypeDay = [
         {elementType: 'geometry', stylers: [{color: '#E3F7F7'}]},
-        // {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
+        {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
         {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
         {
           featureType: 'administrative',
@@ -86,11 +86,6 @@
           elementType: 'geometry',
           stylers: [{color: '#e6e6e6'}]
         },
-        //{
-        //  featureType: 'poi',
-        //  elementType: 'geometry',
-        //  stylers: [{color: '#ef6e61'}]
-        //},
         {
           featureType: 'poi',
           elementType: 'labels',
@@ -191,16 +186,12 @@
           elementType: 'labels',
           stylers: [{visibility: 'off'}]
         }
-        // {
-        //   elementType: 'labels',
-        //   stylers: [{visibility: 'off'}]
-        // }
       ];
 
     var styledMapTypeNight = [
       {elementType: 'geometry', stylers: [{color: '#000000'}]},
-      // {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
-      // {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
+      {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
+      {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
       {
         featureType: 'administrative',
         elementType: 'geometry.stroke',
@@ -301,11 +292,6 @@
         elementType: 'labels.text.fill',
         stylers: [{color: '#8f7d77'}]
       },
-      // {
-      //   featureType: 'transit.line',
-      //   elementType: 'labels.text.stroke',
-      //   stylers: [{color: '#6b6e6c'}]
-      // },
       {
         featureType: 'transit.station',
         elementType: 'geometry',
