@@ -7,9 +7,11 @@
   angular.module('app.dashboard.controllers', [])
     .controller('DashboardCtrl', DashboardCtrl);
 
-  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location'];
+  //DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location'];
+  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', '$http'];
 
-  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location) {
+  //function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location) {
+  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, $http) {
     /**
      * Injections
      */
@@ -19,101 +21,21 @@
     /**
      * Private properties
      */
-
+    
     /**
      * Private methods
      */
 
-    function updateUsersLocation() {
-      var response = [
-        {
-          id: "41",
-          user: "ana",
-          latitude: "47.1564",
-          longitude: "27.5901",
-          genre: "female"
-        }, {
-          id: "44",
-          user: "cosmin",
-          latitude: "47.1552",
-          longitude: "27.5884",
-          genre: "male"
-        }];
+     function getIcon() {
+        angular.forEach($scope.dataHolder.markers, function(item) {
 
-      $scope.dataHolder.markers = [
-        {
-          id: "41",
-          pos: {
-            latitude: "47.1574",
-            longitude: "27.5901"
-          },
-          options: {
-            icon: "icons/male_marker_20.png"
+          if(item.gender === 'male') {
+            item.options.icon = "icons/male_marker_22.png";
+          } else {
+            item.options.icon = "icons/female_marker_22.png";
           }
-        },
-        {
-          id: "42",
-          pos: {
-            latitude: "47.1508",
-            longitude: "27.5991"
-          },
-          options: {
-            icon: "icons/male_marker_20.png"
-          }
-        },
-        {
-          id: "43",
-          pos: {
-            latitude: "47.1585",
-            longitude: "27.5972"
-          },
-          options: {
-            icon: "icons/female_marker_20.png"
-          }
-        },
-        {
-          id: "44",
-          pos: {
-            latitude: "47.1579",
-            longitude: "27.5991"
-          },
-          options: {
-            icon: "icons/female_marker_20.png"
-          }
-        },
-        {
-          id: "45",
-          pos: {
-            latitude: "47.1570",
-            longitude: "27.5920"
-          },
-          options: {
-            icon: "icons/female_marker_20.png"
-          }
-        }
-      ];
-
-    }
-
-    function setSonar() {
-      var direction = 1;
-      var rMin = 25, rMax = 40;
-
-      setInterval(function () {
-        var refreshIntervalId = setInterval(function () {
-
-          var radius = $scope.dataHolder.circle.radius;
-
-          if ((radius > rMax)) {
-            clearInterval(refreshIntervalId);
-          }
-          $scope.dataHolder.circle.radius = (radius + direction * 1);
-          $scope.$apply();
-        }, 150);
-
-        $scope.dataHolder.circle.radius = 25;
-      }, 10000);
-    }
+        });
+     }
 
     /**
      * Scope properties
@@ -128,27 +50,14 @@
         disableDefaultUI: true,
         scrollwheel: true,
         styles: mapStyle,
-        cluster: {
-          minimumClusterSize : 10,
-          zoomOnClick: true,
-          styles: [{
-              url: "icons/female_marker_20.png",
-              width:60,
-              height:60,
-              textColor: 'white',
-              textSize: 14,
-              fontFamily: 'Open Sans'
-          }],
-          averageCenter: true,
-          clusterClass: 'cluster-icon'
-        }
+        maxZoom: 15
       },
       mapCenter: {
         latitude: location.latitude,
         longitude: location.longitude
       },
       circle: {
-        radius: 25,
+        radius: 500,
         stroke: {
           color: "#83b7c7",
           weight: 2,
@@ -164,6 +73,16 @@
         },
         visible: true
       },
+      mapEvents: {
+        zoom_changed: function(map) {
+          var currentZoom = map.getZoom();
+          var currentRadius = $scope.dataHolder.circle.radius;
+          var p = Math.pow(2, (21 - currentZoom));
+          $scope.dataHolder.circle.radius = p * 1128.497220 * 0.0027;
+          // On zoom, close all the infoWindows
+          $scope.dataHolder.window.show = false;
+        }
+      },
       markersEvents: {
           click: function(marker, eventName, model) {
               $scope.dataHolder.window.model = model;
@@ -173,19 +92,16 @@
       window: {
         marker: {},
         show: false,
-        closeClick: function() {
-          this.show = false;
-        },
         options: {
           boxClass: "infobox",
           boxStyle: {
-            backgroundColor: "#8ab0ab",
-            border: "1px solid #8ab023",
+            backgroundColor: "#42414f",
             borderRadius: "5px",
             minWidth: "180px",
             padding: "5px",
             width: "0px",
-            height: "100px"
+            height: "120px",
+            boxShadow: "2px 0px 54px -1px rgba(0,0,0,0.75)"
           },
           disableAutoPan: false,
           maxWidth: 0,
@@ -193,28 +109,56 @@
           zIndex: null,
           isHidden: false,
           enableEventPropagation: true
-        }
-      },
-      userDetails: {
-        name: "Ana",
-        age: "25",
-        genre: "female",
-        location: "Iasi",
-        interests: "Clubs, cars & trips"
+        } 
       },
       cluster: {
-        minimumClusterSize : 10,
         zoomOnClick: true,
+        maxZoom: 14,
         styles: [{
-            url: "icons/m4-fab.png",
-            width:60,
-            height:60,
-            textColor: 'white',
-            textSize: 14,
-            fontFamily: 'Open Sans'
+            url: 'icons/cluster/cluster-purple-small-2.png',
+            width:51,
+            height:53,
+            textColor: 'black',
+            textSize: 14
+        },{
+            url: 'icons/cluster/cluster-mustar-small-2.png',
+            width:51,
+            height:53,
+            textColor: 'black',
+            textSize: 14
+        },{
+            url: 'icons/cluster/cluster-grue-small-2.png',
+            width:51,
+            height:53,
+            textColor: 'black',
+            textSize: 14
+        },{
+            url: 'icons/cluster/cluster-brown-large.png',
+            width:51,
+            height:53,
+            textColor: 'black',
+            textSize: 14
+        },{
+            url: 'icons/cluster/cluster-greenos-large.png',
+            width:51,
+            height:53,
+            textColor: 'black',
+            textSize: 14
         }],
         averageCenter: true,
-        clusterClass: 'cluster-icon'
+        minimumClusterSize: 2,
+        clusterClass: 'cluster-icon',
+        calculator: function(markers, numStyles) {
+          if (markers.length < 5) return {text: markers.length, index: 1};
+          if (markers.length < 12) return {text: markers.length, index: 2};
+          if (markers.length < 15) return {text: markers.length, index: 3};
+          return {text: markers.length, index: 4};
+        }
+      },
+      clusterEvents: {
+        click: function(cluster, clusterModels) {
+        
+        }
       }
     };
 
@@ -234,14 +178,16 @@
      * Init Method
      */
     (function init() {
+      $http.get('/js/dashboard/controllers/mock_markers.json').then(function(response) {
+        $scope.dataHolder.markers = response.data;
+        getIcon();
+      });
+
       $timeout(function () {
         $ionicLoading.hide();
         navigator.vibrate(1000);
       }, 2000);
-
-      updateUsersLocation();
-      setSonar();
-      updateUsersLocation();
+      
     })();
   }
 })();

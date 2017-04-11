@@ -1,2 +1,52 @@
 /* Empty. Add your own CSS if you like */
 
+/* Info Window */
+
+.infobox > img {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+}
+.user-window-top {
+  height: 70%;
+}
+.user-window-bottom {
+  height: 30%;
+  font-size: 30px;
+  text-align: center;
+}
+.user-avatar {
+  width: 40%;
+}
+.user-avatar img {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+}
+.user-avatar a {
+  width: 100%;
+  display: block;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  color: #e6e6e6;
+}
+.user-avatar a:hover {
+  color: #FFFFFF;
+}
+.user-details {
+  width: 60%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 10px;
+  color: #e6e6e6;
+  font-size: 14px;
+}
+.user-window-bottom a {
+  cursor: pointer;
+  color: #e6e6e6;
+}
+.user-window-bottom a:hover {
+  color: red;
+}

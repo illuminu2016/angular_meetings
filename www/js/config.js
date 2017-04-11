@@ -5,16 +5,22 @@
   'use strict';
 
   angular.module('app')
-    .config(Config);
+    .config(Config)
+    .constant('CONSTANTS', {
+      'API_URL': 'http://sorincozma.co.uk/meetings-api/'
+    });
 
-    Config.$inject = ['uiGmapGoogleMapApiProvider', '$ionicConfigProvider'];
+    Config.$inject = ['uiGmapGoogleMapApiProvider', '$ionicConfigProvider', '$httpProvider'];
 
-    function Config(GoogleMapApiProviders, $ionicConfigProvider) {
+    function Config(GoogleMapApiProviders, $ionicConfigProvider, $httpProvider) {
 
       $ionicConfigProvider.tabs.position('bottom');
 
       GoogleMapApiProviders.configure({
         china: true
       });
+      // Allow CORS
+      $httpProvider.defaults.useXDomain = true;
+      delete $httpProvider.defaults.headers.common['X-Requested-With'];
     }
 })();
