@@ -7,9 +7,9 @@
   angular.module('app.dashboard.controllers', [])
     .controller('DashboardCtrl', DashboardCtrl);
 
-  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location', '$http'];
+  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location', '$http', 'CONSTANTS'];
 
-  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location, $http) {
+  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location, $http, CONSTANTS) {
 
     /**
      * Injections
@@ -20,6 +20,11 @@
     /**
      * Private properties
      */
+
+     // var location = { // TODO: to be removed
+     //    latitude: "47.1574",
+     //    longitude: "27.5901"
+     // };
     
     /**
      * Private methods
@@ -191,7 +196,7 @@
      * Init Method
      */
     (function init() {
-      $http.get('/js/dashboard/controllers/mock_markers.json').then(function(response) {
+      $http.get(CONSTANTS.API_URL + 'mock_markers.json').then(function(response) {
         $scope.dataHolder.markers = response.data;
         getIcon();
       });
