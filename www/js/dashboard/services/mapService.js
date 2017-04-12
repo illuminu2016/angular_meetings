@@ -407,7 +407,7 @@
       var userHour = new Date().getHours();
 
       if(userHour < 7 || userHour > 20) {
-        deferred.resolve(styledMapTypeNight2);
+        deferred.resolve(styledMapTypeDay);
       } else {
         deferred.resolve(styledMapTypeDay);
       }
