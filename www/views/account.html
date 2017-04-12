@@ -1,9 +1,14 @@
 <ion-view view-title="Account">
   <ion-content>
     <ion-list>
-      <ion-toggle  ng-model="settings.enableFriends">
+      <ion-toggle ng-model="settings.enableFriends">
         Enable Friends
       </ion-toggle>
+      <input type="text" ng-model="settings.userName" value="" />
+      <button ng-click="setUser(settings.userName)">Set user</button>
+      <hr />
+      <p>The user got from the API is:</p>
+      <p>{{userFromAPI}}</p>
     </ion-list>
   </ion-content>
 </ion-view>

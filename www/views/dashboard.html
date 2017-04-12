@@ -1,6 +1,6 @@
 <ion-view>
   <ion-content>
-    <ui-gmap-google-map center="dataHolder.mapCenter" zoom="dataHolder.map.zoom" options="dataHolder.options" refresh="dataHolder.map.refresh">
+    <ui-gmap-google-map center="dataHolder.mapCenter" zoom="dataHolder.map.zoom" options="dataHolder.options" refresh="dataHolder.map.refresh" events="dataHolder.mapEvents">
       <ui-gmap-map-type options="squaresMapType"></ui-gmap-map-type>
       <ui-gmap-circle center="dataHolder.circle.center" radius="dataHolder.circle.radius" visible="dataHolder.circle.visible" stroke="dataHolder.circle.stroke" fill="dataHolder.circle.fill"></ui-gmap-circle>
       
@@ -13,20 +13,20 @@
           <div class="height-100">
             <div class="clearfix user-window-top">
               <div class="user-avatar fleft height-100">
-                <img src="../img/jane-doe.png" class="height-100" alt="profile image"/>
+                <img ng-src="{{getUserImage(dataHolder.window.model)}}" class="height-100" alt="profile image" />
               </div>
               <div class="user-details fleft">
                 <div class="margin-bottom-5">
                   <i class="icon ion-person"></i>
-                  {{dataHolder.userDetails.name}}
+                  {{dataHolder.window.model.name}}
                 </div>
                 <div class="margin-bottom-5">
                   <i class="icon ion-chatbubbles"></i>
-                  {{dataHolder.userDetails.age}} years
+                  {{dataHolder.window.model.age}} years
                 </div>
                 <div class="margin-bottom-5">
                   <i class="icon ion-android-pin"></i>
-                  {{dataHolder.userDetails.location}}
+                  {{dataHolder.window.model.location}}
                 </div>
              </div>
             </div>
@@ -47,7 +47,8 @@
           icon="'options.icon'"
           events="dataHolder.markersEvents"
           type="'cluster'" 
-          typeOptions="'dataHolder.cluster'"
+          typeOptions="dataHolder.cluster"
+          typeEvents="dataHolder.clusterEvents"
         >
         </ui-gmap-markers>
 
