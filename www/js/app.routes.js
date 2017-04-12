@@ -18,14 +18,20 @@
         controller: 'LoginCtrl'
       })
 
+      .state('terms', {
+        url: '/terms',
+        templateUrl: 'views/terms.html'
+      })
+
+      .state('privacy', {
+        url: '/privacy',
+        templateUrl: 'views/privacy.html'
+      })
+
       .state('tab', {
         url: '/tab',
         abstract: true,
         templateUrl: 'views/tabs.html',
-        params: {
-          username: null,
-          password: null
-        },
         resolve: {
           location: accountResolveProvider.getLocation,
           mapStyle: accountResolveProvider.getMapStyle

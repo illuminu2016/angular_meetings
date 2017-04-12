@@ -7,9 +7,9 @@
   angular.module('app')
     .run(Run);
 
-    Run.$inject = ['$ionicPlatform', '$rootScope'];
+    Run.$inject = ['$ionicPlatform', '$rootScope', 'loginService'];
 
-    function Run($ionicPlatform, $rootScope) {
+    function Run($ionicPlatform, $rootScope, loginService) {
       $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
