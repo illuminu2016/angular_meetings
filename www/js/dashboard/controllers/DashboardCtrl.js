@@ -7,11 +7,10 @@
   angular.module('app.dashboard.controllers', [])
     .controller('DashboardCtrl', DashboardCtrl);
 
-  //DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location'];
-  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', '$http'];
+  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location', '$http'];
 
-  //function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location) {
-  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, $http) {
+  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location, $http) {
+
     /**
      * Injections
      */
@@ -172,6 +171,20 @@
 
      $scope.contactUser = function() {
         alert("Contact the user.");
+     };
+
+     $scope.getUserImage = function(user) {
+      if(user) {
+        if(user.image === null) {
+          if(user.gender === 'male') {
+            return '../img/man-white.png';
+          } else {
+            return '../img/woman-white.png';
+          }
+        } else {
+          return user.image;
+        }
+      }      
      };
 
     /**

@@ -13,9 +13,7 @@
           <div class="height-100">
             <div class="clearfix user-window-top">
               <div class="user-avatar fleft height-100">
-                <img ng-src="{{dataHolder.window.model.image === null ? 
-                (dataHolder.window.model.gender === 'male' ? '../img/man-white.png' : '../img/woman-white.png') 
-                : dataHolder.window.model.image}}" class="height-100" alt="profile image" />
+                <img ng-src="{{getUserImage(dataHolder.window.model)}}" class="height-100" alt="profile image" />
               </div>
               <div class="user-details fleft">
                 <div class="margin-bottom-5">

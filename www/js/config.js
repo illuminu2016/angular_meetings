@@ -6,9 +6,6 @@
 
   angular.module('app')
     .config(Config)
-    .constant('CONSTANTS', {
-      'API_URL': 'http://sorincozma.co.uk/meetings-api/'
-    });
 
     Config.$inject = ['uiGmapGoogleMapApiProvider', '$ionicConfigProvider', '$httpProvider'];
 
