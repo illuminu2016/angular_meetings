@@ -323,13 +323,28 @@
       {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
       {
         featureType: 'administrative.locality',
-        elementType: 'labels.text.fill',
-        stylers: [{color: '#d59563'}]
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'administrative.land_parcel',
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'administrative.neighborhood',
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'administrative.province',
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
       },
       {
         featureType: 'poi',
-        elementType: 'labels.text.fill',
-        stylers: [{color: '#d59563'}]
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
       },
       {
         featureType: 'poi.park',
@@ -338,8 +353,8 @@
       },
       {
         featureType: 'poi.park',
-        elementType: 'labels.text.fill',
-        stylers: [{color: '#6b9a76'}]
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
       },
       {
         featureType: 'road',
@@ -377,9 +392,19 @@
         stylers: [{color: '#2f3948'}]
       },
       {
+        featureType: 'transit.line',
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      },
+      {
         featureType: 'transit.station',
-        elementType: 'labels.text.fill',
-        stylers: [{color: '#d59563'}]
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'transit.station.airport',
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
       },
       {
         featureType: 'water',
@@ -388,15 +413,6 @@
       },
       {
         featureType: 'water',
-        elementType: 'labels.text.fill',
-        stylers: [{color: '#515c6d'}]
-      },
-      {
-        featureType: 'water',
-        elementType: 'labels.text.stroke',
-        stylers: [{color: '#17263c'}]
-      },
-      {
         elementType: 'labels',
         stylers: [{visibility: 'off'}]
       }
@@ -407,7 +423,7 @@
       var userHour = new Date().getHours();
 
       if(userHour < 7 || userHour > 20) {
-        deferred.resolve(styledMapTypeDay);
+        deferred.resolve(styledMapTypeNight2);
       } else {
         deferred.resolve(styledMapTypeDay);
       }
