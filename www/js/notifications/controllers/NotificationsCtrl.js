@@ -7,9 +7,9 @@
   angular.module('app.notifications.controllers', [])
     .controller('NotificationsCtrl', NotificationsCtrl);
 
-  NotificationsCtrl.$inject = ['$injector', '$scope', '$stateParams'];
+  NotificationsCtrl.$inject = ['$injector', '$scope', '$stateParams', '$state'];
 
-  function NotificationsCtrl($injector, $scope, $stateParams) {
+  function NotificationsCtrl($injector, $scope, $stateParams, $state) {
     /**
      * Injections
      */
@@ -38,6 +38,10 @@
 
     $scope.remove = function(chat) {
       chatService.remove(chat);
+    };
+
+    $scope.changeToMessages = function() {
+      $state.transitionTo('tab.notifications', '', { reload: true, inherit: true, notify: true });//reload
     };
 
     /**

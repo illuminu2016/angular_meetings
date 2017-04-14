@@ -1,12 +1,13 @@
-<ion-view view-title="{{chat.name}}">
-  <ion-nav-bar class="bar-stable">
-    <ion-nav-back-button>
-    </ion-nav-back-button>
-  </ion-nav-bar>
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
-  </ion-content>
-</ion-view>
+<ion-header-bar align-title="center">
+  <div class="buttons">
+    <button class="button button-icon icon ion-arrow-left-c" ng-click="changeToMessages()">
+    </button>
+  </div>
+  <h1 class="title"><img ng-src="{{chat.face}}" style="width: 40px; height: 40px;">{{chat.name}}</h1>
+</ion-header-bar>
+<ion-content class="padding">
+  <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+  <p>
+    {{chat.lastText}}
+  </p>
+</ion-content>
