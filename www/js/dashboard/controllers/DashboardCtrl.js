@@ -21,7 +21,8 @@
      * Private properties
      */
 
-     // var location = { // TODO: to be removed
+      // TODO: to be removed
+     // var location = { 
      //    latitude: "47.1574",
      //    longitude: "27.5901"
      // };
@@ -54,6 +55,7 @@
         disableDefaultUI: true,
         scrollwheel: true,
         styles: mapStyle,
+        minZoom: 9,
         maxZoom: 15
       },
       mapCenter: {
@@ -94,12 +96,10 @@
             }
       },
       window: {
-        marker: {},
-        show: false,
         options: {
           boxClass: "infobox",
           boxStyle: {
-            backgroundColor: "#42414f",
+            backgroundColor: "#181A1C",
             borderRadius: "5px",
             minWidth: "180px",
             padding: "5px",
@@ -113,37 +113,52 @@
           zIndex: null,
           isHidden: false,
           enableEventPropagation: true
+        },
+        closeClick: function() {
+          $scope.dataHolder.window.show = false;
         } 
       },
       cluster: {
         zoomOnClick: true,
         maxZoom: 14,
         styles: [{
-            url: 'icons/cluster/cluster-purple-small-2.png',
+            url: 'icons/cluster/cluster-1.png',
             width:51,
             height:53,
             textColor: 'black',
             textSize: 14
         },{
-            url: 'icons/cluster/cluster-mustar-small-2.png',
+            url: 'icons/cluster/cluster-2.png',
+            width:51,
+            height:53,
+            textColor: 'white',
+            textSize: 14
+        },{
+            url: 'icons/cluster/cluster-3.png',
+            width:51,
+            height:53,
+            textColor: 'white',
+            textSize: 14
+        },{
+            url: 'icons/cluster/cluster-4.png',
+            width:51,
+            height:53,
+            textColor: 'white',
+            textSize: 14
+        },{
+            url: 'icons/cluster/cluster-5.png',
             width:51,
             height:53,
             textColor: 'black',
             textSize: 14
         },{
-            url: 'icons/cluster/cluster-grue-small-2.png',
+            url: 'icons/cluster/cluster-6.png',
             width:51,
             height:53,
             textColor: 'black',
             textSize: 14
         },{
-            url: 'icons/cluster/cluster-brown-large.png',
-            width:51,
-            height:53,
-            textColor: 'black',
-            textSize: 14
-        },{
-            url: 'icons/cluster/cluster-greenos-large.png',
+            url: 'icons/cluster/cluster-7.png',
             width:51,
             height:53,
             textColor: 'black',
@@ -153,10 +168,20 @@
         minimumClusterSize: 2,
         clusterClass: 'cluster-icon',
         calculator: function(markers, numStyles) {
-          if (markers.length < 5) return {text: markers.length, index: 1};
-          if (markers.length < 12) return {text: markers.length, index: 2};
-          if (markers.length < 15) return {text: markers.length, index: 3};
-          return {text: markers.length, index: 4};
+          var currentHour = new Date().getHours();
+          if(currentHour < 7 || currentHour > 20) {       // night
+              if (markers.length < 10) return {text: markers.length, index: 1};
+              if (markers.length < 100) return {text: markers.length, index: 6};
+              if (markers.length < 1000) return {text: markers.length, index: 7};
+              return {text: markers.length, index: 5};
+          } else {        // day
+            if (markers.length < 10) return {text: markers.length, index: 1};
+            if (markers.length < 100) return {text: markers.length, index: 2};
+            if (markers.length < 1000) return {text: markers.length, index: 3};
+            return {text: markers.length, index: 4};
+          }
+
+         
         }
       },
       clusterEvents: {
