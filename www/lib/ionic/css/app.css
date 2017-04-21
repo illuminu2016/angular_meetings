@@ -13706,165 +13706,107 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   transition-duration: 0s;
 }
 
-/* line 15, ../scss/colors.scss */
+/* line 15, ../scss/custom/_colors.scss */
 .red-bg {
   background: #ED1C24;
 }
 
-/* line 18, ../scss/colors.scss */
+/* line 18, ../scss/custom/_colors.scss */
 .blue-bg {
   background: #15AAEA;
 }
 
-/* line 21, ../scss/colors.scss */
+/* line 21, ../scss/custom/_colors.scss */
 .grey-bg {
   background: #E6E6E6;
 }
 
-/* line 24, ../scss/colors.scss */
+/* line 24, ../scss/custom/_colors.scss */
 .yellow-bg {
   background: #FECE1A;
 }
 
-/* line 27, ../scss/colors.scss */
+/* line 27, ../scss/custom/_colors.scss */
 .black-light-bg {
   background: #181A1C;
 }
 
-/* line 30, ../scss/colors.scss */
+/* line 30, ../scss/custom/_colors.scss */
 .black-bg {
   background: #000000;
 }
 
-/* line 33, ../scss/colors.scss */
+/* line 33, ../scss/custom/_colors.scss */
 .white-bg {
   background: #FFFFFF;
 }
 
-/* line 36, ../scss/colors.scss */
+/* line 36, ../scss/custom/_colors.scss */
 .blue-green-bg {
   background: #004040;
 }
 
-/* line 39, ../scss/colors.scss */
+/* line 39, ../scss/custom/_colors.scss */
 .orange-bg {
   background: #FF7F00;
 }
 
-/* line 42, ../scss/colors.scss */
+/* line 42, ../scss/custom/_colors.scss */
 .purple-bg {
   background: #943EC5;
 }
 
-/* line 45, ../scss/colors.scss */
+/* line 45, ../scss/custom/_colors.scss */
 .red-color {
   background: #ED1C24;
 }
 
-/* line 48, ../scss/colors.scss */
+/* line 48, ../scss/custom/_colors.scss */
 .blue-color {
   background: #15AAEA;
 }
 
-/* line 51, ../scss/colors.scss */
+/* line 51, ../scss/custom/_colors.scss */
 .grey-color {
   background: #E6E6E6;
 }
 
-/* line 54, ../scss/colors.scss */
+/* line 54, ../scss/custom/_colors.scss */
 .yellow-color {
   background: #FECE1A;
 }
 
-/* line 57, ../scss/colors.scss */
+/* line 57, ../scss/custom/_colors.scss */
 .black-light-bcolorg {
   background: #181A1C;
 }
 
-/* line 60, ../scss/colors.scss */
+/* line 60, ../scss/custom/_colors.scss */
 .black-color {
   background: #000000;
 }
 
-/* line 63, ../scss/colors.scss */
+/* line 63, ../scss/custom/_colors.scss */
 .white-color {
   background: #FFFFFF;
 }
 
-/* line 66, ../scss/colors.scss */
+/* line 66, ../scss/custom/_colors.scss */
 .blue-green-color {
   background: #004040;
 }
 
-/* line 69, ../scss/colors.scss */
+/* line 69, ../scss/custom/_colors.scss */
 .orange-color {
   background: #FF7F00;
 }
 
-/* line 72, ../scss/colors.scss */
+/* line 72, ../scss/custom/_colors.scss */
 .purple-color {
   background: #943EC5;
 }
 
-/* General */
-/* line 5, ../scss/app.scss */
-.fleft {
-  float: left;
-}
-
-/* line 8, ../scss/app.scss */
-.height-100 {
-  height: 100%;
-}
-
-/* line 11, ../scss/app.scss */
-.width-50 {
-  width: 50%;
-}
-
-/* line 14, ../scss/app.scss */
-.margin-bottom-5 {
-  margin-bottom: 5px;
-}
-
-/* line 17, ../scss/app.scss */
-.margin-left-2 {
-  margin-left: 2px;
-}
-
-/* line 20, ../scss/app.scss */
-.margin-left-4 {
-  margin-left: 4px;
-}
-
-/* line 23, ../scss/app.scss */
-.margin-left-5 {
-  margin-left: 5px;
-}
-
-/* line 26, ../scss/app.scss */
-.margin-left-6 {
-  margin-left: 6px;
-}
-
-/* line 29, ../scss/app.scss */
-.text-center {
-  text-align: center;
-}
-
-/* line 33, ../scss/app.scss */
-.angular-google-map-container, .angular-google-map {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 39, ../scss/app.scss */
-.scroll {
-  height: 100%;
-}
-
-/* line 42, ../scss/app.scss */
+/* line 1, ../scss/custom/_login.scss */
 .login-fb {
   padding: 10px;
   position: absolute;
@@ -13872,7 +13814,7 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   width: 100%;
 }
 
-/* line 48, ../scss/app.scss */
+/* line 7, ../scss/custom/_login.scss */
 .header {
   height: 70px;
   background: #83b7c7;
@@ -13885,17 +13827,17 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
 }
 
 /* Loader */
-/* line 60, ../scss/app.scss */
+/* line 19, ../scss/custom/_login.scss */
 .loader_wrapper {
   height: 100%;
 }
 
-/* line 64, ../scss/app.scss */
+/* line 23, ../scss/custom/_login.scss */
 .loader-app {
   float: left;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 27, ../scss/custom/_login.scss */
 .loader-text {
   display: inline-block;
   margin: 5px 0 0 15px;
@@ -13903,47 +13845,47 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
 }
 
 /* Slider */
-/* line 75, ../scss/app.scss */
+/* line 34, ../scss/custom/_login.scss */
 .slider {
   margin: 20px;
   position: static;
 }
 
-/* line 80, ../scss/app.scss */
+/* line 39, ../scss/custom/_login.scss */
 .slider-slide {
   text-align: center;
   color: #999;
 }
 
-/* line 85, ../scss/app.scss */
+/* line 44, ../scss/custom/_login.scss */
 .slider-pager {
   top: 60%;
   left: 0%;
 }
 
-/* line 91, ../scss/app.scss */
+/* line 50, ../scss/custom/_login.scss */
 .slider-pager-page > i {
   font-size: 80%;
 }
-/* line 94, ../scss/app.scss */
+/* line 53, ../scss/custom/_login.scss */
 .slider-pager-page.active {
   color: #ef473a;
 }
 
-/* line 99, ../scss/app.scss */
+/* line 58, ../scss/custom/_login.scss */
 .slider-image-placeholder {
   width: 100%;
   height: 280px;
   border: 1px solid #cccccc;
 }
-/* line 103, ../scss/app.scss */
+/* line 62, ../scss/custom/_login.scss */
 .slider-image-placeholder > div {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 110, ../scss/app.scss */
+/* line 69, ../scss/custom/_login.scss */
 .slider-header-placeholder {
   text-align: center;
   margin: 0 0 20px;
@@ -13951,40 +13893,47 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
 }
 
 /* Modal */
-/* line 117, ../scss/app.scss */
+/* line 76, ../scss/custom/_login.scss */
 .modal-backdrop {
   height: 60%;
 }
-/* line 119, ../scss/app.scss */
+/* line 78, ../scss/custom/_login.scss */
 .modal-backdrop .modal-backdrop-bg {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 124, ../scss/app.scss */
+/* line 83, ../scss/custom/_login.scss */
 .modal-wrapper {
   height: 100%;
 }
-/* line 126, ../scss/app.scss */
+/* line 85, ../scss/custom/_login.scss */
 .modal-wrapper .modal {
   width: 60%;
   margin: 22% 19%;
   box-shadow: 1px 1px 1px #333;
 }
-/* line 130, ../scss/app.scss */
+/* line 89, ../scss/custom/_login.scss */
 .modal-wrapper .modal .title {
   font-size: 16px;
 }
-/* line 133, ../scss/app.scss */
+/* line 92, ../scss/custom/_login.scss */
 .modal-wrapper .modal .modal-content {
   heigth: 100px;
 }
-/* line 135, ../scss/app.scss */
+/* line 94, ../scss/custom/_login.scss */
 .modal-wrapper .modal .modal-content p {
   margin: 55px 10px;
 }
 
+/* line 1, ../scss/custom/_dashboard.scss */
+.angular-google-map-container, .angular-google-map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* Info Window */
-/* line 144, ../scss/app.scss */
+/* line 9, ../scss/custom/_dashboard.scss */
 .infobox > img {
   position: absolute !important;
   right: 0;
@@ -13992,30 +13941,30 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   padding: 0 0 10px 10px;
 }
 
-/* line 150, ../scss/app.scss */
+/* line 15, ../scss/custom/_dashboard.scss */
 .user-window-top {
   height: 70%;
 }
 
-/* line 153, ../scss/app.scss */
+/* line 18, ../scss/custom/_dashboard.scss */
 .user-window-bottom {
   height: 30%;
   font-size: 30px;
   text-align: center;
 }
 
-/* line 158, ../scss/app.scss */
+/* line 23, ../scss/custom/_dashboard.scss */
 .user-avatar {
   width: 40%;
 }
 
-/* line 161, ../scss/app.scss */
+/* line 26, ../scss/custom/_dashboard.scss */
 .user-avatar img {
   width: 100%;
   border: 1px solid #FFFFFF;
 }
 
-/* line 165, ../scss/app.scss */
+/* line 30, ../scss/custom/_dashboard.scss */
 .user-avatar a {
   width: 100%;
   display: block;
@@ -14025,12 +13974,12 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   color: #000000;
 }
 
-/* line 173, ../scss/app.scss */
+/* line 38, ../scss/custom/_dashboard.scss */
 .user-avatar a:hover {
   color: #FFFFFF;
 }
 
-/* line 176, ../scss/app.scss */
+/* line 41, ../scss/custom/_dashboard.scss */
 .user-details {
   width: 60%;
   justify-content: center;
@@ -14040,22 +13989,196 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   padding-left: 10px;
 }
 
-/* line 184, ../scss/app.scss */
+/* line 49, ../scss/custom/_dashboard.scss */
 .user-window-bottom a {
   cursor: pointer;
   color: #000000;
 }
 
-/* line 188, ../scss/app.scss */
+/* line 53, ../scss/custom/_dashboard.scss */
 .user-window-bottom a:hover {
   color: red;
 }
 
 /* To be removed */
-/* line 193, ../scss/app.scss */
+/* line 58, ../scss/custom/_dashboard.scss */
 .custom_style {
   width: 100px;
   height: 40px;
   margin-bottom: 10px;
   border: 2px solid pink;
+}
+
+/* line 1, ../scss/custom/_notifications.scss */
+.bar-footer {
+  background-image: none;
+  padding: 0px;
+}
+
+/* line 6, ../scss/custom/_notifications.scss */
+.smile-btn {
+  padding: 0 3px 0 8px !important;
+}
+/* line 8, ../scss/custom/_notifications.scss */
+.smile-btn:before {
+  margin-top: 5px;
+  color: #888;
+  font-size: 23px !important;
+}
+
+/* line 15, ../scss/custom/_notifications.scss */
+.camera-btn {
+  padding: 0 3px 0 3px !important;
+}
+/* line 17, ../scss/custom/_notifications.scss */
+.camera-btn:before {
+  margin-top: 5px;
+  color: #888;
+  font-size: 23px !important;
+}
+
+/* line 24, ../scss/custom/_notifications.scss */
+.details-btn-left {
+  height: 33px;
+  border: none;
+  padding: 0px;
+  top: 2px;
+  background: transparent;
+}
+
+/* line 32, ../scss/custom/_notifications.scss */
+.send-msg-content {
+  background: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  font-size: 13px;
+  max-height: 300px;
+  padding: 10px 50px 10px 80px;
+  color: #444;
+  /*  box-shadow: 0 -8px 8px -8px #696868;*/
+}
+/* line 43, ../scss/custom/_notifications.scss */
+.send-msg-content:empty:before {
+  content: attr(data-placeholder);
+  color: gray;
+}
+/* line 47, ../scss/custom/_notifications.scss */
+.send-msg-content .msg-wrapper {
+  overflow: auto;
+  padding: 0 15px 0 0;
+}
+/* line 50, ../scss/custom/_notifications.scss */
+.send-msg-content .msg-wrapper .msg-placeholder {
+  color: #888;
+  max-height: 280px;
+}
+
+/* line 57, ../scss/custom/_notifications.scss */
+.buttons > .button {
+  color: #444;
+}
+
+/* line 61, ../scss/custom/_notifications.scss */
+.chat-face {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  border-radius: 50%;
+}
+
+/* line 68, ../scss/custom/_notifications.scss */
+.chat-name {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  color: #444;
+}
+
+/* line 75, ../scss/custom/_notifications.scss */
+.read-message a {
+  background-color: #f2f2f2 !important;
+}
+
+/* line 79, ../scss/custom/_notifications.scss */
+.chat-animation-left.ng-enter {
+  -webkit-animation: bounceInLeft 1s;
+  animation: bounceInLeft 1s;
+}
+
+/* line 84, ../scss/custom/_notifications.scss */
+.chat-animation-right.ng-enter {
+  -webkit-animation: bounceInRight 1s;
+  animation: bounceInRight 1s;
+}
+
+/* line 89, ../scss/custom/_notifications.scss */
+.chat-item.ng-enter-stagger {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration: 0;
+  animation-duration: 0;
+}
+
+/* line 98, ../scss/custom/_notifications.scss */
+.emo-placeholder {
+  position: absolute;
+  bottom: 0px;
+  height: 146px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+/* General */
+/* line 10, ../scss/app.scss */
+.fleft {
+  float: left;
+}
+
+/* line 13, ../scss/app.scss */
+.height-100 {
+  height: 100%;
+}
+
+/* line 16, ../scss/app.scss */
+.width-50 {
+  width: 50%;
+}
+
+/* line 19, ../scss/app.scss */
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
+/* line 22, ../scss/app.scss */
+.margin-left-2 {
+  margin-left: 2px;
+}
+
+/* line 25, ../scss/app.scss */
+.margin-left-4 {
+  margin-left: 4px;
+}
+
+/* line 28, ../scss/app.scss */
+.margin-left-5 {
+  margin-left: 5px;
+}
+
+/* line 31, ../scss/app.scss */
+.margin-left-6 {
+  margin-left: 6px;
+}
+
+/* line 34, ../scss/app.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 38, ../scss/app.scss */
+.scroll {
+  height: 100%;
 }

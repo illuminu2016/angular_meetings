@@ -7,9 +7,9 @@
   angular.module('app.dashboard.controllers', [])
     .controller('DashboardCtrl', DashboardCtrl);
 
-  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location', '$http', 'CONSTANTS'];
+  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', '$http', 'CONSTANTS'];
 
-  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location, $http, CONSTANTS) {
+  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, $http, CONSTANTS) {
 
     /**
      * Injections
@@ -22,11 +22,11 @@
      */
 
       // TODO: to be removed
-     // var location = { 
-     //    latitude: "47.1574",
-     //    longitude: "27.5901"
-     // };
-    
+      var location = {
+         latitude: "47.1574",
+         longitude: "27.5901"
+      };
+
     /**
      * Private methods
      */
@@ -41,6 +41,21 @@
           }
         });
      }
+
+    function calculator(markers) {
+        var currentHour = new Date().getHours();
+        if(currentHour < 7 || currentHour > 20) {       // night
+          if (markers.length < 10) return {text: markers.length, index: 1};
+          if (markers.length < 100) return {text: markers.length, index: 6};
+          if (markers.length < 1000) return {text: markers.length, index: 7};
+          return {text: markers.length, index: 5};
+        } else {        // day
+          if (markers.length < 10) return {text: markers.length, index: 1};
+          if (markers.length < 100) return {text: markers.length, index: 2};
+          if (markers.length < 1000) return {text: markers.length, index: 3};
+          return {text: markers.length, index: 4};
+        }
+    }
 
     /**
      * Scope properties
@@ -81,9 +96,10 @@
       },
       mapEvents: {
         zoom_changed: function(map) {
-          var currentZoom = map.getZoom();
-          var currentRadius = $scope.dataHolder.circle.radius;
-          var p = Math.pow(2, (21 - currentZoom));
+          var currentZoom = map.getZoom(),
+              currentRadius = $scope.dataHolder.circle.radius,
+              p = Math.pow(2, (21 - currentZoom));
+
           $scope.dataHolder.circle.radius = p * 1128.497220 * 0.0027;
           // On zoom, close all the infoWindows
           $scope.dataHolder.window.show = false;
@@ -116,7 +132,7 @@
         },
         closeClick: function() {
           $scope.dataHolder.window.show = false;
-        } 
+        }
       },
       cluster: {
         zoomOnClick: true,
@@ -167,26 +183,11 @@
         averageCenter: true,
         minimumClusterSize: 2,
         clusterClass: 'cluster-icon',
-        calculator: function(markers, numStyles) {
-          var currentHour = new Date().getHours();
-          if(currentHour < 7 || currentHour > 20) {       // night
-              if (markers.length < 10) return {text: markers.length, index: 1};
-              if (markers.length < 100) return {text: markers.length, index: 6};
-              if (markers.length < 1000) return {text: markers.length, index: 7};
-              return {text: markers.length, index: 5};
-          } else {        // day
-            if (markers.length < 10) return {text: markers.length, index: 1};
-            if (markers.length < 100) return {text: markers.length, index: 2};
-            if (markers.length < 1000) return {text: markers.length, index: 3};
-            return {text: markers.length, index: 4};
-          }
-
-         
-        }
+        calculator: calculator
       },
       clusterEvents: {
         click: function(cluster, clusterModels) {
-        
+
         }
       }
     };
@@ -214,7 +215,7 @@
         } else {
           return user.image;
         }
-      }      
+      }
      };
 
     /**
@@ -230,7 +231,7 @@
         $ionicLoading.hide();
         navigator.vibrate(1000);
       }, 2000);
-      
+
     })();
   }
 })();

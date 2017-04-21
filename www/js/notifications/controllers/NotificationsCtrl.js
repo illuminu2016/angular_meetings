@@ -32,6 +32,9 @@
 
     $scope.chat = chatService.get($stateParams.chatId);
 
+    $scope.stateHolder = {
+      emoticonsWindow: false
+    }
     /**
      * Scope methods
      */
@@ -41,7 +44,22 @@
     };
 
     $scope.changeToMessages = function() {
+      $scope.stateHolder.emoticonsWindow = false;
       $state.transitionTo('tab.notifications', '', { reload: true, inherit: true, notify: true });//reload
+    };
+
+    $scope.openEmoticons = function() {
+      $scope.stateHolder.emoticonsWindow = !$scope.stateHolder.emoticonsWindow;
+    };
+
+    $scope.getMessagesListClasses = function (chat) {
+      var returnClass = '';
+
+      if(chat.read) {
+        returnClass = chat.read ? 'read-message ' : '';
+      }
+
+      return (chat.orientation === 'left') ? returnClass + 'chat-animation-left' : returnClass + 'chat-animation-right';
     };
 
     /**
