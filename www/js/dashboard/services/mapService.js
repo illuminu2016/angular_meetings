@@ -8,9 +8,9 @@
 
     .factory('mapService', MapService);
 
-  MapService.$inject = ['$q', '$window', '$cordovaGeolocation', '$ionicLoading'];
+  MapService.$inject = ['$q', '$rootScope', '$cordovaGeolocation', '$ionicLoading'];
 
-  function MapService($q, $window, $cordovaGeolocation, $ionicLoading) {
+  function MapService($q, $rootScope, $cordovaGeolocation, $ionicLoading) {
     // Style map
     var styledMapTypeDay = [
         {elementType: 'geometry', stylers: [{color: '#E3F7F7'}]},
@@ -434,7 +434,7 @@
     function getUserLocation() {
       var deferred = $q.defer();
 
-      var posOptions = {timeout: 10000, enableHighAccuracy: true};
+      var posOptions = {timeout: 30000, enableHighAccuracy: true};
 
         $cordovaGeolocation
           .getCurrentPosition(posOptions)
@@ -445,12 +445,11 @@
               longitude: response.coords.longitude
             };
 
-            console.log('position', position);
-
             deferred.resolve(position);
 
           }, function (err) {
             $ionicLoading.hide();
+            $rootScope.$broadcast('locationError', 'Broadcast');
             console.log(err);
           });
 
