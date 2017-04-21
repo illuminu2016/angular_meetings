@@ -1,0 +1,105 @@
+.bar-footer {
+  background-image: none;
+  padding: 0px;
+}
+
+.smile-btn {
+    padding: 0 3px 0 8px !important;
+    &:before {
+      margin-top: 5px;
+      color: #888;
+      font-size: 23px !important;
+    }
+}
+
+.camera-btn {
+  padding: 0 3px 0 3px !important;
+  &:before {
+    margin-top: 5px;
+    color: #888;
+    font-size: 23px !important;
+  }
+}
+
+.details-btn-left {
+  height: 33px;
+  border: none;
+  padding: 0px;
+  top: 2px;
+  background: transparent;
+}
+
+.send-msg-content {
+  background: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  font-size: 13px;
+  max-height: 300px;
+  padding: 10px 50px 10px 80px;
+  color: #444;
+/*  box-shadow: 0 -8px 8px -8px #696868;*/
+  &:empty:before {
+    content:attr(data-placeholder);
+    color:gray;
+  }
+  .msg-wrapper {
+    overflow: auto;
+    padding: 0 15px 0 0;
+    .msg-placeholder {
+      color: #888;
+      max-height: 280px;
+    }
+  }
+}
+
+.buttons > .button {
+  color: $dark;
+}
+
+.chat-face {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  border-radius: 50%;
+}
+
+.chat-name {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  color: $dark;
+}
+
+.read-message a{
+  background-color: #f2f2f2 !important;
+}
+
+.chat-animation-left.ng-enter {
+  -webkit-animation: bounceInLeft 1s;
+  animation: bounceInLeft 1s;
+}
+
+.chat-animation-right.ng-enter {
+  -webkit-animation: bounceInRight 1s;
+  animation: bounceInRight 1s;
+}
+
+.chat-item.ng-enter-stagger {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration: 0;
+  animation-duration: 0;
+}
+
+.emo-placeholder {
+  position: absolute;
+  bottom: 0px;
+  height: 146px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
