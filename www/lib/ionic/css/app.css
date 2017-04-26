@@ -14070,12 +14070,12 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
 }
 
 /* Info Window */
-/* line 215, ../scss/app.scss */
+/* line 228, ../scss/app.scss */
 .infobox > img {
   display: none;
 }
 
-/* line 218, ../scss/app.scss */
+/* line 231, ../scss/app.scss */
 .box-inner {
   padding: 5px;
   border-radius: 5px;
@@ -14085,33 +14085,33 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   opacity: 0.9;
 }
 
-/* line 226, ../scss/app.scss */
+/* line 239, ../scss/app.scss */
 .box-inner-male {
   background: #15AAEA;
 }
-/* line 228, ../scss/app.scss */
+/* line 241, ../scss/app.scss */
 .box-inner-male .close-box {
   background-color: #34c6eb;
 }
-/* line 231, ../scss/app.scss */
+/* line 244, ../scss/app.scss */
 .box-inner-male .infowindow-action {
   background: #34c6eb;
 }
 
-/* line 235, ../scss/app.scss */
+/* line 248, ../scss/app.scss */
 .box-inner-female {
   background: #ED1C24;
 }
-/* line 237, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 .box-inner-female .close-box {
   background-color: #f52e2e;
 }
-/* line 240, ../scss/app.scss */
+/* line 253, ../scss/app.scss */
 .box-inner-female .infowindow-action {
   background: #f52e2e;
 }
 
-/* line 244, ../scss/app.scss */
+/* line 257, ../scss/app.scss */
 .close-box {
   position: absolute;
   right: -15px;
@@ -14129,13 +14129,13 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   box-shadow: 10px 10px 15px -14px #e6e6e6;
 }
 
-/* line 260, ../scss/app.scss */
+/* line 273, ../scss/app.scss */
 .user-window-top {
   height: 60%;
   padding: 0;
 }
 
-/* line 264, ../scss/app.scss */
+/* line 277, ../scss/app.scss */
 .user-window-bottom {
   height: 40%;
   color: #FFFFFF;
@@ -14143,13 +14143,13 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   margin-top: 5px;
 }
 
-/* line 270, ../scss/app.scss */
+/* line 283, ../scss/app.scss */
 .user-avatar img {
   width: 100%;
   border: 1px solid #FFFFFF;
 }
 
-/* line 274, ../scss/app.scss */
+/* line 287, ../scss/app.scss */
 .infowindow-action {
   padding: 5px 9px;
   border-radius: 50%;
@@ -14157,12 +14157,12 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   box-shadow: 10px 10px 15px -14px #e6e6e6;
 }
 
-/* line 280, ../scss/app.scss */
+/* line 293, ../scss/app.scss */
 .user-window-bottom a {
   font-size: 22px;
 }
 
-/* line 284, ../scss/app.scss */
+/* line 297, ../scss/app.scss */
 .my-location {
   width: 50px;
   height: 50px;
@@ -14173,13 +14173,13 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   text-align: center;
   cursor: pointer;
 }
-/* line 293, ../scss/app.scss */
+/* line 306, ../scss/app.scss */
 .my-location i {
   font-size: 30px;
 }
 
 /* To be removed */
-/* line 299, ../scss/app.scss */
+/* line 312, ../scss/app.scss */
 .custom_style {
   width: 100px;
   height: 40px;

@@ -212,6 +212,19 @@ $brown: #594F4F;
 
 /* Info Window */
 
+// .box-inner {
+//     transition: opacity 2s;
+// }
+
+// .box-inner.ng-enter, .box-inner.ng-leave-active {
+//     opacity: 0;
+// }
+
+// .box-inner.ng-leave, .box-inner.ng-enter-active {
+//     opacity: 1;
+// }
+
+
 .infobox > img {
   display: none;
 }

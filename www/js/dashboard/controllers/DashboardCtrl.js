@@ -24,10 +24,10 @@
      var currentHour = new Date().getHours();
 
       // TODO: to be removed
-     // var location = { 
-     //    latitude: "47.1574",
-     //    longitude: "27.5901"
-     // };
+     var location = { 
+        latitude: "47.1574",
+        longitude: "27.5901"
+     };
     
     /**
      * Private methods
@@ -137,7 +137,7 @@
         },
         click: function() {
           $scope.dataHolder.window.show = false;
-          $scope.$apply();
+          $scope.$digest();
         }, 
         bounds_changed: function() {
           getNearestMarkers();
@@ -146,7 +146,7 @@
       markersEvents: {
           click: function(marker, eventName, model) {
               $scope.dataHolder.window.model = model;
-              $scope.$apply();
+              $scope.$digest();
               $scope.dataHolder.window.show = true;
             }
       },
