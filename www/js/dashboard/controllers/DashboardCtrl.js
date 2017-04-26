@@ -4,12 +4,12 @@
 (function () {
   'use strict';
 
-  angular.module('app.dashboard.controllers', [])
+  angular.module('app.dashboard.controllers')
     .controller('DashboardCtrl', DashboardCtrl);
 
-  DashboardCtrl.$inject = ['$scope', '$ionicLoading', '$timeout', 'mapStyle', 'location', '$http', 'CONSTANTS'];
+  DashboardCtrl.$inject = ['$scope', '$rootScope', '$ionicLoading', '$timeout', 'mapStyle', 'location', '$http', 'CONSTANTS'];
 
-  function DashboardCtrl($scope, $ionicLoading, $timeout, mapStyle, location, $http, CONSTANTS) {
+  function DashboardCtrl($scope, $rootScope, $ionicLoading, $timeout, mapStyle, location, $http, CONSTANTS) {
 
     /**
      * Injections
@@ -20,6 +20,8 @@
     /**
      * Private properties
      */
+
+     var currentHour = new Date().getHours();
 
       // TODO: to be removed
      // var location = { 
@@ -42,26 +44,72 @@
         });
      }
 
+      // This is called in mapEvents.bounds_changed and the functionality is not completed
+    function getNearestMarkers() {
+      var nearestMarkers = [];
+      var map = $scope.dataHolder.map.control.getGMap();
+      var markers = $scope.dataHolder.markers;
+        
+      for (var i=0; i<markers.length; i++){
+        var tempLat = parseFloat($scope.dataHolder.markers[i].pos.latitude);
+        var tempLng = parseFloat($scope.dataHolder.markers[i].pos.longitude);
+        var tempCoords = new google.maps.LatLng(tempLat, tempLng);
+        var tempMarker = new google.maps.Marker({ position: tempCoords });     
+          if(map.getBounds().contains(tempMarker.getPosition())){
+            nearestMarkers.push(markers[i]);
+          }
+      }
+    }
+
+    // function getCenterMarker() {
+    //   if(currentHour < 7 || currentHour > 20) {       // night
+    //     return 'icons/me-white.png';
+    //   } else {    // day
+    //     return 'icons/me-black.png';
+    //     // return 'icons/ripple.gif';
+    //   }
+    // }
+    
+
     /**
      * Scope properties
      */
 
     $scope.dataHolder = {
       map: {
-        zoom: 14,
-        refresh: false
+        zoom: 15,
+        refresh: false,
+        control: {}
       },
       options: {
         disableDefaultUI: true,
         scrollwheel: true,
         styles: mapStyle,
-        minZoom: 9,
+        minZoom: 12,
         maxZoom: 15
       },
       mapCenter: {
         latitude: location.latitude,
         longitude: location.longitude
       },
+      // centerMarker: {
+      //   pos: {
+      //     latitude: location.latitude,
+      //     longitude: location.longitude
+      //   },
+      //   click: function() {
+      //     $scope.dataHolder.mapCenter.latitude = location.latitude;
+      //     $scope.dataHolder.mapCenter.longitude = location.longitude;
+      //     $scope.dataHolder.window.show = false;
+      //   },
+      //   options: {
+      //     icon: {
+      //       url: getCenterMarker()
+      //     },
+      //     //optimized: false,
+      //     zIndex: -10
+      //   }
+      // },
       circle: {
         radius: 500,
         stroke: {
@@ -85,13 +133,20 @@
           var currentRadius = $scope.dataHolder.circle.radius;
           var p = Math.pow(2, (21 - currentZoom));
           $scope.dataHolder.circle.radius = p * 1128.497220 * 0.0027;
-          // On zoom, close all the infoWindows
           $scope.dataHolder.window.show = false;
+        },
+        click: function() {
+          $scope.dataHolder.window.show = false;
+          $scope.$apply();
+        }, 
+        bounds_changed: function() {
+          getNearestMarkers();
         }
       },
       markersEvents: {
           click: function(marker, eventName, model) {
               $scope.dataHolder.window.model = model;
+              $scope.$apply();
               $scope.dataHolder.window.show = true;
             }
       },
@@ -99,13 +154,13 @@
         options: {
           boxClass: "infobox",
           boxStyle: {
-            backgroundColor: "#181A1C",
-            borderRadius: "5px",
-            minWidth: "180px",
-            padding: "5px",
+            backgroundColor: "transparent",
+            padding: "15px",
+            minWidth: "270px",
             width: "0px",
-            height: "120px",
-            boxShadow: "2px 0px 54px -1px rgba(0,0,0,0.75)"
+            height: "180px",
+            cursor: "default",
+            color: "white"
           },
           disableAutoPan: false,
           maxWidth: 0,
@@ -168,7 +223,6 @@
         minimumClusterSize: 2,
         clusterClass: 'cluster-icon',
         calculator: function(markers, numStyles) {
-          var currentHour = new Date().getHours();
           if(currentHour < 7 || currentHour > 20) {       // night
               if (markers.length < 10) return {text: markers.length, index: 1};
               if (markers.length < 100) return {text: markers.length, index: 6};
@@ -179,9 +233,7 @@
             if (markers.length < 100) return {text: markers.length, index: 2};
             if (markers.length < 1000) return {text: markers.length, index: 3};
             return {text: markers.length, index: 4};
-          }
-
-         
+          }        
         }
       },
       clusterEvents: {
@@ -195,6 +247,18 @@
      * Scope methods
      */
 
+    $scope.$on('setMapCenter', function(event, args) {
+      $scope.dataHolder.mapCenter.latitude = location.latitude;
+      $scope.dataHolder.mapCenter.longitude = location.longitude;
+      $scope.dataHolder.window.show = false;
+    });
+
+    // Close the infoWindow when you enter/leave the map page
+    $rootScope.$on('$stateChangeStart', 
+      function(event, toState, toParams, fromState, fromParams){ 
+          $scope.dataHolder.window.show = false;
+      })
+
      $scope.viewUser = function() {
         alert("Go to user's profile page.");
      };
@@ -202,6 +266,10 @@
      $scope.contactUser = function() {
         alert("Contact the user.");
      };
+
+     $scope.closeInfoBox = function() {
+      $scope.dataHolder.window.show = false;
+     }
 
      $scope.getUserImage = function(user) {
       if(user) {
@@ -215,6 +283,20 @@
           return user.image;
         }
       }      
+     };
+
+     $scope.stopPropagation = function(e) {
+      if (!e) {
+        e = window.event;
+      }
+      //IE9 & Other Browsers
+      if (e.stopPropagation) {
+        e.stopPropagation();
+      }
+      //IE8 and Lower
+      else {
+        e.cancelBubble = true;
+      }
      };
 
     /**
