@@ -8,6 +8,9 @@ $yellow: #E3B23C;
 $brown: #594F4F;
 
 /* General */
+.hidden {
+  display: none;
+}
 .fleft {
   float: left;
 }
@@ -35,7 +38,29 @@ $brown: #594F4F;
 .text-center {
   text-align: center;
 }
-
+.center-content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.round-image {
+  border-radius: 50%;
+}
+.font-size-12px {
+  font-size: 12px;
+}
+.font-size-14px {
+  font-size: 14px;
+}
+.padding-0 {
+  padding: 0;
+}
+.padding-left-5 {
+  padding-left: 5px;
+}
+.inactive-item {
+  opacity: 0.5;
+}
 .angular-google-map-container, .angular-google-map {
   display: block;
   width: 100%;
@@ -190,54 +215,87 @@ $brown: #594F4F;
   }
 }
 
-/* Info Window */
-
 .infobox > img {
-  position: absolute !important;
-  right: 0;
-  top: 0;
-  padding: 0 0 10px 10px;
+  display: none;
+}
+.box-inner {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 0px 54px -1px rgba(0,0,0,0.75);
+  position: relative;
+  height: 100%;
+  opacity: 0.9;
+}
+.box-inner-male {
+  background: $blue;
+  .close-box {
+    background-color: #34c6eb;
+  }
+  .infowindow-action {
+    background: #34c6eb;
+  }
+}
+.box-inner-female {
+  background: $red;
+  .close-box {
+    background-color: #f52e2e;
+  }
+  .infowindow-action {
+    background: #f52e2e;
+  }
+}
+.close-box {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  border: 2px solid $grey;
+  align-items: center;
+  display: flex;
+  font-size: 15px;
+  color: $white;
+  cursor: pointer;
+  box-shadow: 10px 10px 15px -14px rgba(230,230,230,1);
 }
 .user-window-top {
-  height: 70%;
+  height: 60%;
+  padding: 0;
 }
 .user-window-bottom {
-  height: 30%;
-  font-size: 30px;
+  height: 40%;
+  color: $white;
   text-align: center;
-}
-.user-avatar {
-  width: 40%;
+  margin-top: 5px;
 }
 .user-avatar img {
   width: 100%;
   border: 1px solid $white;
 }
-.user-avatar a {
-  width: 100%;
-  display: block;
-  border: 1px solid $white;
-  text-align: center;
-  cursor: pointer;
-  color: $black;
-}
-.user-avatar a:hover {
-  color: $white;
-}
-.user-details {
-  width: 60%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding-left: 10px;
+.infowindow-action {
+  padding: 5px 9px;
+  border-radius: 50%;
+  border: 2px solid $grey;
+  box-shadow: 10px 10px 15px -14px rgba(230,230,230,1);
 }
 .user-window-bottom a {
-  cursor: pointer;
-  color: $black;
+  font-size: 22px;
 }
-.user-window-bottom a:hover {
-  color: red;
+
+.my-location {
+  width: 50px;
+  height: 50px;
+  color: $blue;
+  background: $white;
+  box-shadow: 10px 10px 15px -14px rgba(230,230,230,1);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  i {
+    font-size: 30px;
+  }
 }
 
 /* To be removed */
