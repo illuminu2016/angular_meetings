@@ -24,53 +24,57 @@
      var currentHour = new Date().getHours();
 
       // TODO: to be removed
-     var location = { 
-        latitude: "47.1574",
-        longitude: "27.5901"
-     };
+     // var location = { 
+     //    latitude: "47.1574",
+     //    longitude: "27.5901"
+     // };
     
     /**
      * Private methods
      */
 
      function getIcon() {
-        angular.forEach($scope.dataHolder.markers, function(item) {
-
-          if(item.gender === 'male') {
-            item.options.icon = "icons/male_marker_22.png";
+        angular.forEach($scope.dataHolder.markers, function(marker) {
+          if(!checkMarker(marker)) {
+            if(marker.gender === 'male') {
+              marker.options.icon = "icons/male_marker_22_unavailable.png";
+            } else {
+              marker.options.icon = "icons/female_marker_22_unavailable.png";
+            }
           } else {
-            item.options.icon = "icons/female_marker_22.png";
+            if(marker.gender === 'male') {
+              marker.options.icon = "icons/male_marker_22.png";
+            } else {
+              marker.options.icon = "icons/female_marker_22.png";
+            }
           }
         });
+
      }
 
-      // This is called in mapEvents.bounds_changed and the functionality is not completed
-    function getNearestMarkers() {
-      var nearestMarkers = [];
+    function checkMarker(marker) {
       var map = $scope.dataHolder.map.control.getGMap();
-      var markers = $scope.dataHolder.markers;
+
+      // Crate a new Circle element for local use (not added to the map)
+      var circle = new google.maps.Circle({
+            center : new google.maps.LatLng(location.latitude,location.longitude),
+            radius: $scope.dataHolder.circle.radius
+        });
         
-      for (var i=0; i<markers.length; i++){
-        var tempLat = parseFloat($scope.dataHolder.markers[i].pos.latitude);
-        var tempLng = parseFloat($scope.dataHolder.markers[i].pos.longitude);
-        var tempCoords = new google.maps.LatLng(tempLat, tempLng);
-        var tempMarker = new google.maps.Marker({ position: tempCoords });     
-          if(map.getBounds().contains(tempMarker.getPosition())){
-            nearestMarkers.push(markers[i]);
-          }
-      }
+        var tempLat = parseFloat(marker.pos.latitude), 
+            tempLng = parseFloat(marker.pos.longitude), 
+            tempCoords = new google.maps.LatLng(tempLat, tempLng), 
+            tempMarker = new google.maps.Marker({ position: tempCoords });  
+
+        if(circle.getBounds().contains(tempMarker.getPosition())) {
+          marker.options.isNear = 'true';
+          return true;
+        } else {
+          marker.options.isNear = 'false';
+          return false;
+        }
     }
-
-    // function getCenterMarker() {
-    //   if(currentHour < 7 || currentHour > 20) {       // night
-    //     return 'icons/me-white.png';
-    //   } else {    // day
-    //     return 'icons/me-black.png';
-    //     // return 'icons/ripple.gif';
-    //   }
-    // }
     
-
     /**
      * Scope properties
      */
@@ -85,31 +89,13 @@
         disableDefaultUI: true,
         scrollwheel: true,
         styles: mapStyle,
-        minZoom: 12,
+        minZoom: 15,
         maxZoom: 15
       },
       mapCenter: {
         latitude: location.latitude,
         longitude: location.longitude
       },
-      // centerMarker: {
-      //   pos: {
-      //     latitude: location.latitude,
-      //     longitude: location.longitude
-      //   },
-      //   click: function() {
-      //     $scope.dataHolder.mapCenter.latitude = location.latitude;
-      //     $scope.dataHolder.mapCenter.longitude = location.longitude;
-      //     $scope.dataHolder.window.show = false;
-      //   },
-      //   options: {
-      //     icon: {
-      //       url: getCenterMarker()
-      //     },
-      //     //optimized: false,
-      //     zIndex: -10
-      //   }
-      // },
       circle: {
         radius: 500,
         stroke: {
@@ -125,13 +111,18 @@
           latitude: location.latitude,
           longitude: location.longitude
         },
-        visible: true
+        visible: true,
+        events: {
+          click: function() {
+            $scope.dataHolder.window.show = false;
+          }
+        }
       },
       mapEvents: {
         zoom_changed: function(map) {
-          var currentZoom = map.getZoom();
-          var currentRadius = $scope.dataHolder.circle.radius;
-          var p = Math.pow(2, (21 - currentZoom));
+          var currentZoom = map.getZoom(),
+              currentRadius = $scope.dataHolder.circle.radius,
+              p = Math.pow(2, (21 - currentZoom));
           $scope.dataHolder.circle.radius = p * 1128.497220 * 0.0027;
           $scope.dataHolder.window.show = false;
         },
@@ -140,7 +131,7 @@
           $scope.$digest();
         }, 
         bounds_changed: function() {
-          getNearestMarkers();
+          getIcon();
         }
       },
       markersEvents: {
@@ -164,7 +155,7 @@
           },
           disableAutoPan: false,
           maxWidth: 0,
-          pixelOffset: {width: 20, height: -40},
+          pixelOffset: {width: 0, height: -40},
           zIndex: null,
           isHidden: false,
           enableEventPropagation: true

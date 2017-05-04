@@ -8,6 +8,9 @@ $yellow: #E3B23C;
 $brown: #594F4F;
 
 /* General */
+.hidden {
+  display: none;
+}
 .fleft {
   float: left;
 }
@@ -55,7 +58,9 @@ $brown: #594F4F;
 .padding-left-5 {
   padding-left: 5px;
 }
-
+.inactive-item {
+  opacity: 0.5;
+}
 .angular-google-map-container, .angular-google-map {
   display: block;
   width: 100%;
@@ -209,21 +214,6 @@ $brown: #594F4F;
     }
   }
 }
-
-/* Info Window */
-
-// .box-inner {
-//     transition: opacity 2s;
-// }
-
-// .box-inner.ng-enter, .box-inner.ng-leave-active {
-//     opacity: 0;
-// }
-
-// .box-inner.ng-leave, .box-inner.ng-enter-active {
-//     opacity: 1;
-// }
-
 
 .infobox > img {
   display: none;
