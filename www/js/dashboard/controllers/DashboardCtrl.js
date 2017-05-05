@@ -7,9 +7,9 @@
   angular.module('app.dashboard.controllers')
     .controller('DashboardCtrl', DashboardCtrl);
 
-  DashboardCtrl.$inject = ['$scope', '$rootScope', '$ionicLoading', '$timeout', 'mapStyle', 'location', '$http', 'CONSTANTS'];
+  DashboardCtrl.$inject = ['$scope', '$rootScope', '$ionicLoading', '$timeout', 'mapStyle', '$http', 'CONSTANTS'];
 
-  function DashboardCtrl($scope, $rootScope, $ionicLoading, $timeout, mapStyle, location, $http, CONSTANTS) {
+  function DashboardCtrl($scope, $rootScope, $ionicLoading, $timeout, mapStyle, $http, CONSTANTS) {
 
     /**
      * Injections
@@ -24,11 +24,11 @@
      var currentHour = new Date().getHours();
 
       // TODO: to be removed
-     // var location = { 
-     //    latitude: "47.1574",
-     //    longitude: "27.5901"
-     // };
-    
+      var location = {
+         latitude: "47.1574",
+         longitude: "27.5901"
+      };
+
     /**
      * Private methods
      */
@@ -60,11 +60,11 @@
             center : new google.maps.LatLng(location.latitude,location.longitude),
             radius: $scope.dataHolder.circle.radius
         });
-        
-        var tempLat = parseFloat(marker.pos.latitude), 
-            tempLng = parseFloat(marker.pos.longitude), 
-            tempCoords = new google.maps.LatLng(tempLat, tempLng), 
-            tempMarker = new google.maps.Marker({ position: tempCoords });  
+
+        var tempLat = parseFloat(marker.pos.latitude),
+            tempLng = parseFloat(marker.pos.longitude),
+            tempCoords = new google.maps.LatLng(tempLat, tempLng),
+            tempMarker = new google.maps.Marker({ position: tempCoords });
 
         if(circle.getBounds().contains(tempMarker.getPosition())) {
           marker.options.isNear = 'true';
@@ -74,7 +74,7 @@
           return false;
         }
     }
-    
+
     /**
      * Scope properties
      */
@@ -123,13 +123,14 @@
           var currentZoom = map.getZoom(),
               currentRadius = $scope.dataHolder.circle.radius,
               p = Math.pow(2, (21 - currentZoom));
+
           $scope.dataHolder.circle.radius = p * 1128.497220 * 0.0027;
           $scope.dataHolder.window.show = false;
         },
         click: function() {
           $scope.dataHolder.window.show = false;
           $scope.$digest();
-        }, 
+        },
         bounds_changed: function() {
           getIcon();
         }
@@ -162,7 +163,7 @@
         },
         closeClick: function() {
           $scope.dataHolder.window.show = false;
-        } 
+        }
       },
       cluster: {
         zoomOnClick: true,
@@ -224,12 +225,12 @@
             if (markers.length < 100) return {text: markers.length, index: 2};
             if (markers.length < 1000) return {text: markers.length, index: 3};
             return {text: markers.length, index: 4};
-          }        
+          }
         }
       },
       clusterEvents: {
         click: function(cluster, clusterModels) {
-        
+
         }
       }
     };
@@ -245,10 +246,10 @@
     });
 
     // Close the infoWindow when you enter/leave the map page
-    $rootScope.$on('$stateChangeStart', 
-      function(event, toState, toParams, fromState, fromParams){ 
+    $rootScope.$on('$stateChangeStart',
+      function(event, toState, toParams, fromState, fromParams){
           $scope.dataHolder.window.show = false;
-      })
+      });
 
      $scope.viewUser = function() {
         alert("Go to user's profile page.");
@@ -260,7 +261,7 @@
 
      $scope.closeInfoBox = function() {
       $scope.dataHolder.window.show = false;
-     }
+     };
 
      $scope.getUserImage = function(user) {
       if(user) {
@@ -273,7 +274,7 @@
         } else {
           return user.image;
         }
-      }      
+      }
      };
 
      $scope.stopPropagation = function(e) {
@@ -303,7 +304,7 @@
         $ionicLoading.hide();
         navigator.vibrate(1000);
       }, 2000);
-      
+
     })();
   }
 })();

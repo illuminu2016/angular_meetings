@@ -1,0 +1,226 @@
+.bar-footer {
+  background-image: none;
+  padding: 0px;
+}
+
+.smile-btn {
+    padding: 0 3px 0 8px !important;
+    &:before {
+      color: #888;
+      font-size: 23px !important;
+      line-height: 25px !important;
+    }
+}
+
+.send-btn {
+  padding: 0 3px 0 8px !important;
+  height: 33px;
+}
+
+.sent-icon {
+  color: #3db2e0;
+  &:before {
+    font-size: 23px !important;
+    line-height: 25px !important;
+  }
+}
+
+.camera-btn {
+  padding: 0 3px 0 3px !important;
+  border: none;
+  &:before {
+    color: #888;
+    font-size: 27px !important;
+  }
+}
+
+.details-btn-left {
+  height: 33px;
+  border: none;
+  padding: 0px;
+  top: 2px;
+  z-index: 2;
+  background: transparent;
+}
+
+.send-msg-content {
+  background: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  font-size: 16px;
+  max-height: 300px;
+  padding: 20px 50px 13px 89px;
+  border-top: 1px solid #ccc;
+  color: #444 !important;
+  z-index: 1;
+  box-shadow: 0px 0px 7px rgba(0,0,0,.2);
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: #999 !important;
+}
+
+/* */
+
+div[contenteditable=true] {
+  color: #999;
+}
+
+.send-btn {
+  z-index: 2;
+}
+
+.buttons > .button {
+  color: $dark;
+}
+
+.chat-face {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  border-radius: 50%;
+}
+
+.chat-settings-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.link-settings-btn {
+  color: #3db2e0;
+  @include vertical-align-container();
+}
+
+.chat-name {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  color: $dark;
+}
+
+.read-message a{
+  background-color: #f2f2f2 !important;
+}
+
+.chat-animation-left.ng-enter {
+  -webkit-animation: bounceInLeft 1s;
+  animation: bounceInLeft 1s;
+}
+
+.chat-animation-right.ng-enter {
+  -webkit-animation: bounceInRight 1s;
+  animation: bounceInRight 1s;
+}
+
+.chat-item.ng-enter-stagger {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration: 0;
+  animation-duration: 0;
+}
+
+.emo-placeholder {
+  position: absolute;
+  bottom: 0px;
+  height: 150px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color: #f2f2f2;
+  opacity: 1;
+  & .col {
+    text-align: left;
+  }
+}
+
+.emo-show-hide.ng-hide {
+  opacity: 0;
+}
+
+.emo-show-hide.ng-hide-add {
+  transition: all linear 0s;
+}
+
+.emo-show-hide.ng-hide-remove {
+  transition: all linear 1s;
+}
+
+.message-control-icon {
+  @include vertical-align-container();
+}
+
+.message-content-row {
+  padding: 0px;
+}
+
+.emo-bar {
+  height: 100%;
+  padding: 0;
+  background: #000;
+  & > div  {
+    text-align: center;
+  }
+  & .active {
+    background: rgba(255,255,255,0.3);
+  }
+}
+
+.popover-content {
+  color: #444;
+  padding: 10px;
+  .popover-menu > div {
+    margin: 2px 0;
+  }
+  .delete-chat {
+    color: $red;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+
+.settings-popover {
+  height: 230px;
+  &.popover {
+    border-radius: 0;
+  }
+}
+
+.background-picker-popup .popup {
+  width: 100%;
+  height: 56%;
+  background: $black;
+  .popup-head {
+    display: none;
+  }
+  .popup-body {
+    padding: 0;
+  }
+  .picker-select-container {
+    background: $black;
+    padding: 1px;
+    & > .col {
+      padding: 2px 2px 0 2px;
+    }
+  }
+}
+
+
+.notification-content {
+  background-size: cover !important;
+  opacity: 0;
+}
+
+.notification-content.visible {
+  transition: all 2s;
+  opacity: 1;
+}
+
+.notification-content.nVisible {
+  transition: all 0.3s;
+  opacity: 0;
+}

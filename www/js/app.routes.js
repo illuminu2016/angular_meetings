@@ -33,7 +33,7 @@
         abstract: true,
         templateUrl: 'views/tabs.html',
         resolve: {
-          location: accountResolveProvider.getLocation,
+/*          location: accountResolveProvider.getLocation,*/
           mapStyle: accountResolveProvider.getMapStyle
         }
       })
@@ -68,18 +68,15 @@
         }
       })
 
-      .state('tab.notifications-detail', {
-        url: '/notifications/:chatId',
-        views: {
-          'notifications': {
-            templateUrl: 'views/chat-detail.html',
-            controller: 'NotificationsCtrl'
-          }
-        }
+      .state('notifications-detail', {
+        url: '/detail/:chatId',
+        templateUrl: 'views/chat-detail.html',
+        controller: 'ChatDetailsCtrl',
+        cache: false
       });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/tab/dashboard');
   }
 
 })();

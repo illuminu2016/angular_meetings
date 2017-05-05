@@ -21,6 +21,7 @@
     <link href="lib/ionic/css/app.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -50,15 +51,19 @@
     <script src="js/run.js"></script>
     <script src="js/constants.js"></script>
 
+    <script src="js/common/services/globalsService.js"></script>
+    <script src="js/common/services/teamplatesService.js"></script>
+    <script src="js/login/services/loginService.js"></script>
+    <script src="js/account/services/chatService.js"></script>
+    <script src="js/dashboard/services/mapService.js"></script>
+    <script src="js/notifications/services/chatBackgroundService.js"></script>
+
     <script src="js/login/controllers/LoginCtrl.js"></script>
     <script src="js/account/controllers/AccountCtrl.js"></script>
     <script src="js/dashboard/controllers/DashboardCtrl.js"></script>
     <script src="js/dashboard/controllers/GoToMyLocationCtrl.js"></script>
     <script src="js/notifications/controllers/NotificationsCtrl.js"></script>
-
-    <script src="js/login/services/loginService.js"></script>
-    <script src="js/account/services/chatService.js"></script>
-    <script src="js/dashboard/services/mapService.js"></script>
+    <script src="js/notifications/controllers/ChatDetailsCtrl.js"></script>
 
   </head>
   <body ng-app="app">

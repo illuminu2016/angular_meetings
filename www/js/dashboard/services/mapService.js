@@ -425,7 +425,7 @@
       if(userHour < 7 || userHour > 20) {
         deferred.resolve(styledMapTypeNight2);
       } else {
-        deferred.resolve(styledMapTypeDay);
+        deferred.resolve(styledMapTypeNight2);
       }
 
       return deferred.promise;

@@ -19,10 +19,10 @@
 
   //common
   angular.module('app.common', [
-    'app.common.directives'
+    'app.common.factories'
   ]);
 
-  angular.module('app.common.directives', []);
+  angular.module('app.common.factories', []);
 
   //account
 
