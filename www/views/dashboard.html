@@ -1,42 +1,68 @@
 <ion-view>
   <ion-content>
-    <ui-gmap-google-map center="dataHolder.mapCenter" zoom="dataHolder.map.zoom" options="dataHolder.options" refresh="dataHolder.map.refresh" events="dataHolder.mapEvents">
+    <ui-gmap-google-map center="dataHolder.mapCenter" zoom="dataHolder.map.zoom" options="dataHolder.options" refresh="dataHolder.map.refresh" events="dataHolder.mapEvents" control="dataHolder.map.control">
+      <ui-gmap-map-control position="top-right" controller="GoToMyLocationCtrl" template="views/partials/my-location-button.html"></ui-gmap-map-control>
       <ui-gmap-map-type options="squaresMapType"></ui-gmap-map-type>
-      <ui-gmap-circle center="dataHolder.circle.center" radius="dataHolder.circle.radius" visible="dataHolder.circle.visible" stroke="dataHolder.circle.stroke" fill="dataHolder.circle.fill"></ui-gmap-circle>
-      
+      <ui-gmap-circle 
+        center="dataHolder.circle.center" 
+        radius="dataHolder.circle.radius" 
+        visible="dataHolder.circle.visible" 
+        stroke="dataHolder.circle.stroke" 
+        fill="dataHolder.circle.fill"
+        control="dataHolder.circle.control"
+        events="dataHolder.circle.events"
+        ></ui-gmap-circle>
+
         <ui-gmap-window 
           show="dataHolder.window.show" 
           options="dataHolder.window.options" 
           coords="dataHolder.window.model.pos"
           closeClick="dataHolder.window.closeClick()"
           >
-          <div class="height-100">
-            <div class="clearfix user-window-top">
-              <div class="user-avatar fleft height-100">
-                <img ng-src="{{getUserImage(dataHolder.window.model)}}" class="height-100" alt="profile image" />
+          <div class="box-inner" ng-class="{'box-inner-male': dataHolder.window.model.gender === 'male', 'box-inner-female': dataHolder.window.model.gender === 'female'}" ng-click="$parent.stopPropagation(e)">
+            <div class="close-box" ng-click="$parent.closeInfoBox()"> X </div>
+            <div class="row user-window-top">
+              <div class="col col-40 user-avatar padding-0">
+                <img ng-src="{{getUserImage(dataHolder.window.model)}}" class="round-image" alt="profile image" />
               </div>
-              <div class="user-details fleft">
-                <div class="margin-bottom-5">
-                  <i class="icon ion-person"></i>
-                  <span class="margin-left-5">{{dataHolder.window.model.name}}</span>
+              <div class="col col-60 font-size-14px padding-0 padding-left-5 center-content">
+                <div class="row padding-0">
+                  <div class="col col-20 text-center">
+                    <i class="icon ion-person"></i>
+                  </div>
+                  <div class="col col-80">
+                    <span>{{dataHolder.window.model.name}}</span>{{dataHolder.window.model.options.isNear}}
+                  </div>
                 </div>
-                <div class="margin-bottom-5">
-                  <i class="icon ion-disc"></i>
-                  <span class="margin-left-4">{{dataHolder.window.model.age}} years</span>
+                <div class="row padding-0">
+                  <div class="col col-20 text-center">
+                    <i class="icon ion-disc"></i>
+                  </div>
+                  <div class="col col-80">
+                    <span>{{dataHolder.window.model.age}} years</span>
+                  </div>
                 </div>
-                <div class="margin-bottom-5">
-                  <i class="icon ion-android-pin margin-left-2"></i>
-                  <span class="margin-left-6">{{dataHolder.window.model.location}}</span>
+                <div class="row padding-0">
+                  <div class="col col-20 text-center">
+                    <i class="icon ion-android-pin"></i>
+                  </div>
+                  <div class="col col-80">
+                    <span>{{dataHolder.window.model.location}}</span>
+                  </div>
                 </div>
-             </div>
+              </div>
             </div>
-            <div class="clearfix user-window-bottom">
-              <div class="fleft width-50">
-                <a hef="#" ng-click="$parent.viewUser()"><i class="icon ion-eye"></i></a>
+            <div class="row user-window-bottom">
+              <div class="col col-50">
+                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === 'false'}" ng-click="$parent.contactUser()">
+                  <i class="icon ion-chatbox-working"></i>
+                </a>
               </div>
-              <div class="fleft width-50">
-                <a hef="#" ng-click="$parent.contactUser()"><i class="icon ion-chatbubbles"></i></a>
-             </div>
+              <div class="col col-50">
+                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === 'false'}" ng-click="$parent.viewUser()">
+                  <i class="icon ion-eye"></i>
+                </a>
+              </div>
             </div>
           </div>
         </ui-gmap-window>
