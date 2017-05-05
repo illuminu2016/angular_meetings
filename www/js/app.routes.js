@@ -65,7 +65,8 @@
       .state('notifications-detail', {
         url: '/detail/:chatId',
         templateUrl: 'views/chat-detail.html',
-        controller: 'NotificationsCtrl'
+        controller: 'ChatDetailsCtrl',
+        cache: false
       });
 
     // if none of the above states are matched, use this as the fallback
