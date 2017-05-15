@@ -30,9 +30,6 @@
      */
 
      $scope.dataArrived = false;
-
-     //TODO: Create a service which will get the data for the current user ($stateParams.userId)
-
    
     /**
      * Scope methods

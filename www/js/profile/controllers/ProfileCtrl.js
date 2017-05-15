@@ -29,10 +29,6 @@
 
     $scope.profile = {
         gender: "male",
-        // mainImage: {
-        //   // "path": "img/adam.jpg",
-        //   // "isMain": true
-        // },
         userImages: [
           {
             "path": "img/adam.jpg",
