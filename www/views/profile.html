@@ -1,0 +1,54 @@
+<ion-side-menus>
+  <ion-view>
+    <ion-header-bar align-title="center">
+      <div class="buttons">
+        <button class="button button-icon icon ion-arrow-left-c" ng-click="changeToSettings()">
+        </button>
+      </div>
+      <h1 class="title">
+        <span class="chat-name">Edit profile</span>
+      </h1>
+    </ion-header-bar>
+    <ion-content class="edit-profile">
+      <div class="card">
+      	<div class="main-image-container">
+      		<img ng-src="{{getProfileImage()}}" alt="" class="main-image" ng-if="targetImageExists"/>
+      		<img ng-src="{{getDefaultImage(profile.gender)}}" alt="" class="main-image" ng-if="!targetImageExists"/>
+      		<button class="button button-positive font-size-14" ng-click="uploadImage()" ng-if="profile.userImages.length < maxImgNumber">Upload image</button>
+      		<button class="button button-stable font-size-14" ng-if="profile.userImages.length >= maxImgNumber">Upload image</button>
+      	</div>
+    	</div>
+    	<slick dots="true" infinite="false" speed="300" slides-to-show="2" touch-move="true" arrows="true" slides-to-scroll="1" ng-if="carouselExists">
+		  <div class="slick-img-container" ng-repeat="imageProfile in profile.userImages">
+		  		<img ng-src="{{imageProfile.path}}" alt="" ng-class="{'blue-border': imageProfile.isMain}" />
+		  		<div class="slick-action-buttons text-center">
+			  		<button class="button button-positive font-size-14" ng-click="setMainImage(imageProfile)" ng-if="!imageProfile.isMain">Main</button>
+			  		<button class="button button-assertive" ng-click="deleteImage($index, imageProfile)"><i class="icon ion-android-delete"></i></button>
+			  </div>
+		  </div>
+		</slick>
+
+		<div class="card">
+	      <div class="item item-divider">About yourself</div>
+	      <div contenteditable="true" class="profileDescription" ng-model="profileDescription" ng-blur="saveProfileDescription()"></div>
+	   </div>
+
+	   <div class="card">
+	      <div class="item item-text-wrap">
+	        	<ul class="list">
+		          <li class="item item-toggle">
+		             Show my age
+		           <label class="toggle toggle-positive">
+		               <input type="checkbox" ng-model="profileShowAge" ng-change="showAge(profileShowAge)">
+		               <div class="track">
+		                   <div class="handle"></div>
+		               </div>
+		           </label>
+		          </li>
+		       </ul>
+	      </div>
+	    </div>
+	    <div class="spacer"></div>
+    </ion-content>
+  </ion-view>
+</ion-side-menus>

@@ -28,6 +28,20 @@
         templateUrl: 'views/privacy.html'
       })
 
+      .state('profile', {
+        url: '/profile',
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl',
+        cache: false
+      })
+
+      .state('user', {
+        url: '/user/:userId',
+        templateUrl: 'views/user.html',
+        controller: 'UserCtrl',
+        cache: false
+      })
+
       .state('tab', {
         url: '/tab',
         abstract: true,

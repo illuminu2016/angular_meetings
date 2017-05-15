@@ -10,11 +10,14 @@
       'ngCordova',
       'ngCordovaOauth',
       'uiGmapgoogle-maps',
+      'slick',
       'app.common',
       'app.account',
       'app.dashboard',
       'app.login',
-      'app.notifications'
+      'app.notifications',
+      'app.profile',
+      'app.user'
     ]);
 
   //common
@@ -87,5 +90,37 @@
   angular.module('app.notifications.controllers', []);
   angular.module('app.notifications.directives', []);
   angular.module('app.notifications.filters', []);
+
+  //profile
+
+  angular.module('app.profile', [
+    'app.profile.services',
+    'app.profile.factories',
+    'app.profile.controllers',
+    'app.profile.directives',
+    'app.profile.filters'
+  ]);
+
+  angular.module('app.profile.services', []);
+  angular.module('app.profile.factories', []);
+  angular.module('app.profile.controllers', []);
+  angular.module('app.profile.directives', []);
+  angular.module('app.profile.filters', []);
+
+  //user
+
+  angular.module('app.user', [
+    'app.user.services',
+    'app.user.factories',
+    'app.user.controllers',
+    'app.user.directives',
+    'app.user.filters'
+  ]);
+
+  angular.module('app.user.services', []);
+  angular.module('app.user.factories', []);
+  angular.module('app.user.controllers', []);
+  angular.module('app.user.directives', []);
+  angular.module('app.user.filters', []);
 
 })();

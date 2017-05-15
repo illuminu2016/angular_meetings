@@ -31,7 +31,7 @@
                     <i class="icon ion-person"></i>
                   </div>
                   <div class="col col-80">
-                    <span>{{dataHolder.window.model.name}}</span>{{dataHolder.window.model.options.isNear}}
+                    <span>{{dataHolder.window.model.name}}</span>
                   </div>
                 </div>
                 <div class="row padding-0">
@@ -54,12 +54,12 @@
             </div>
             <div class="row user-window-bottom">
               <div class="col col-50">
-                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === 'false'}" ng-click="$parent.contactUser()">
+                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === 'false'}" ng-click="$parent.contactUser({{dataHolder.window.model.id}})">
                   <i class="icon ion-chatbox-working"></i>
                 </a>
               </div>
               <div class="col col-50">
-                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === 'false'}" ng-click="$parent.viewUser()">
+                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === 'false'}" ng-click="$parent.viewUser({{dataHolder.window.model.id}})">
                   <i class="icon ion-eye"></i>
                 </a>
               </div>
@@ -77,7 +77,7 @@
           typeEvents="dataHolder.clusterEvents"
         >
         </ui-gmap-markers>
-
+        
     </ui-gmap-google-map>
   </ion-content>
 </ion-view>
