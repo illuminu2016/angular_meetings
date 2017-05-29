@@ -1,9 +1,111 @@
-<ion-view view-title="Account">
-  <ion-content>
-    <ion-list>
-      <ion-toggle ng-model="settings.enableFriends">
-        Enable Friends
-      </ion-toggle>
+<ion-view view-title="Settings">
+<ion-nav-bar class="bar-stable bar-dark">
+  </ion-nav-bar>
+  <ion-content>   
+
+    <div class="card">
+      <div class="item item-avatar">
+        <img ng-src="{{settings.profileImg}}">
+        <h2>{{settings.username}}</h2>
+        <p><a ui-sref="profile">Edit my profile</a></p>
+      </div>
+    </div> 
+
+    <div class="card">
+      <div class="item item-divider">Search for</div>
+      <div class="item item-text-wrap">
+        <ul class="list">
+          <li class="item item-toggle item-icon-left">
+            <i class="icon ion-man positive"></i>
+             Men
+           <label class="toggle toggle-positive">
+               <input type="checkbox" ng-model="settings.men" ng-change="searchGenderMen(settings.men, '{{settings.men}}')">
+               <div class="track">
+                   <div class="handle"></div>
+               </div>
+           </label>
+          </li>
+          <li class="item item-toggle item-icon-left">
+            <i class="icon ion-woman assertive"></i>
+            Women
+           <label class="toggle toggle-assertive">
+               <input type="checkbox" ng-model="settings.women" ng-change="searchGenderWomen(settings.women, '{{settings.women}}')">
+               <div class="track">
+                   <div class="handle"></div>
+               </div>
+           </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider">Search distance ({{settings.distance}}m)</div>
+      <div class="item range">
+        <i>100</i>
+        <input type="range" name="distance" min="100" max="1000" value="settings.distance" ng-model="settings.distance" ng-blur="searchDistance(settings.distance)">
+        <i>1000</i>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider">Notifications</div>
+      <div class="item item-text-wrap">
+        <ul class="list">
+          <li class="item item-toggle item-icon-left">
+            <i class="icon ion-chatboxes dark"></i>
+             Messages
+           <label class="toggle toggle-dark">
+               <input type="checkbox" ng-model="settings.messages" ng-change="getMessages(settings.messages)">
+               <div class="track">
+                   <div class="handle"></div>
+               </div>
+           </label>
+          </li>
+          <li class="item item-toggle item-icon-left">
+            <i class="icon ion-email dark"></i>
+            Emails
+           <label class="toggle toggle-dark">
+               <input type="checkbox" ng-model="settings.emails" ng-change="getEmails(settings.emails)">
+               <div class="track">
+                   <div class="handle"></div>
+               </div>
+           </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider">Legal</div>
+      <div class="item item-text-wrap">
+        <ul class="list">
+          <li class="item item-icon-left">
+            <i class="icon ion-document-text dark"></i>
+            <a ui-sref="terms">Terms &amp; conditions</a>
+          </li>
+          <li class="item item-icon-left">
+            <i class="icon ion-ios-information dark"></i>
+            <a ui-sref="privacy">Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="button button-full button-calm" ng-click="contactUs()">
+      Contact us
+    </button>
+
+    <button class="button button-full button-positive" ng-click="logout()">
+      Logout
+    </button>
+
+    <button class="button button-full button-assertive" ng-click="deleteAccount()">
+      Delete account
+    </button>
+
+
+
       <input type="text" ng-model="settings.userName" value="" />
       <button ng-click="setUser(settings.userName)">Set user</button>
       <hr />
@@ -21,6 +123,6 @@
       <div class="custom_style purple-bg"></div>
 
       
-    </ion-list>
+    <!-- </ion-list> -->
   </ion-content>
 </ion-view>

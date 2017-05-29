@@ -7,9 +7,9 @@
   angular.module('app.dashboard.controllers')
     .controller('DashboardCtrl', DashboardCtrl);
 
-  DashboardCtrl.$inject = ['$scope', '$rootScope', '$ionicLoading', '$timeout', 'mapStyle', '$http', 'CONSTANTS'];
+  DashboardCtrl.$inject = ['$scope', '$rootScope', '$ionicLoading', '$timeout', 'mapStyle', 'markersDetails', '$http', 'CONSTANTS', '$state'];
 
-  function DashboardCtrl($scope, $rootScope, $ionicLoading, $timeout, mapStyle, $http, CONSTANTS) {
+  function DashboardCtrl($scope, $rootScope, $ionicLoading, $timeout, mapStyle, markersDetails, $http, CONSTANTS, $state) {
 
     /**
      * Injections
@@ -52,8 +52,13 @@
 
      }
 
+     function transitionTo(state, param) {
+        $state.transitionTo(state, param, { reload: true, inherit: true, notify: true });
+     }
+
     function checkMarker(marker) {
-      var map = $scope.dataHolder.map.control.getGMap();
+      if($scope.dataHolder.map) {
+        var map = $scope.dataHolder.map.control.getGMap();
 
       // Crate a new Circle element for local use (not added to the map)
       var circle = new google.maps.Circle({
@@ -73,6 +78,9 @@
           marker.options.isNear = 'false';
           return false;
         }
+      }
+
+      
     }
 
     /**
@@ -249,14 +257,21 @@
     $rootScope.$on('$stateChangeStart',
       function(event, toState, toParams, fromState, fromParams){
           $scope.dataHolder.window.show = false;
+          $scope.dataHolder.map.control.refresh = true;
+          // Refresh the map on state change
+          angular.element(document).ready(function () {
+            var map = $scope.dataHolder.map.control.getGMap();
+            google.maps.event.trigger(map, 'resize');
+          });
+          
       });
 
-     $scope.viewUser = function() {
-        alert("Go to user's profile page.");
+     $scope.viewUser = function(id) {
+      transitionTo('user', {userId: id});
      };
 
-     $scope.contactUser = function() {
-        alert("Contact the user.");
+     $scope.contactUser = function(id) {
+      transitionTo('notifications-detail', {chatId: id});
      };
 
      $scope.closeInfoBox = function() {
@@ -295,10 +310,13 @@
      * Init Method
      */
     (function init() {
+      // TODO: get the markers using the resolver accountResolveProvider.getMarkers
       $http.get(CONSTANTS.API_URL + 'mock_markers.json').then(function(response) {
         $scope.dataHolder.markers = response.data;
         getIcon();
       });
+
+      getIcon();
 
       $timeout(function () {
         $ionicLoading.hide();

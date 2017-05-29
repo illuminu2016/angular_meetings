@@ -28,13 +28,31 @@
         templateUrl: 'views/privacy.html'
       })
 
+      .state('profile', {
+        url: '/profile',
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl',
+        cache: false
+      })
+
+      .state('user', {
+        url: '/user/:userId',
+        templateUrl: 'views/user.html',
+        controller: 'UserCtrl',
+        cache: false,
+        resolve: {
+          userDetails: accountResolveProvider.getUser
+        }
+      })
+
       .state('tab', {
         url: '/tab',
         abstract: true,
         templateUrl: 'views/tabs.html',
         resolve: {
 /*          location: accountResolveProvider.getLocation,*/
-          mapStyle: accountResolveProvider.getMapStyle
+          mapStyle: accountResolveProvider.getMapStyle,
+          markersDetails: accountResolveProvider.getMarkers
         }
       })
 

@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 @import 'ionic',
+'custom/general',
 'custom/mixins',
 'custom/colors',
 'custom/login',
 'custom/dashboard',
-'custom/notifications';
+'custom/notifications',
+'custom/profile',
+'custom/user';
 
 $blue: #15AAEA;
 $red: #ED1C24;
@@ -14,6 +17,11 @@ $yellow: #E3B23C;
 $brown: #594F4F;
 
 /* General */
+
+a {
+  text-decoration: none;
+}
+
 .hidden {
   display: none;
 }
@@ -29,7 +37,12 @@ $brown: #594F4F;
 .width-50 {
   width: 50%;
 }
-
+.font-size-14 {
+  font-size: 14px;
+}
+.margin-top-50 {
+  margin-top: 50px;
+}
 .margin-bottom-5 {
   margin-bottom: 5px;
 }
@@ -232,8 +245,3 @@ $brown: #594F4F;
     }
   }
 }
-
-
-
-
-
