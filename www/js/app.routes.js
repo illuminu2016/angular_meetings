@@ -39,7 +39,10 @@
         url: '/user/:userId',
         templateUrl: 'views/user.html',
         controller: 'UserCtrl',
-        cache: false
+        cache: false,
+        resolve: {
+          userDetails: accountResolveProvider.getUser
+        }
       })
 
       .state('tab', {
@@ -48,7 +51,8 @@
         templateUrl: 'views/tabs.html',
         resolve: {
 /*          location: accountResolveProvider.getLocation,*/
-          mapStyle: accountResolveProvider.getMapStyle
+          mapStyle: accountResolveProvider.getMapStyle,
+          markersDetails: accountResolveProvider.getMarkers
         }
       })
 

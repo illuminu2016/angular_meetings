@@ -70,6 +70,44 @@
         return defer.promise;
       }
     ];
+
+    this.getUser = ['$stateParams', '$q', 'userService',
+      function ($stateParams, $q, userService) {
+        var defer = $q.defer();
+
+        userService.getUserDetails()
+          .then(function (response) {
+            defer.resolve(response);
+          })
+          .catch(function () {
+            defer.reject({
+              status: 'Not Found',
+              message: 'Cannot get user.'
+            });
+          });
+
+        return defer.promise;
+      }
+    ];
+
+    this.getMarkers = ['$stateParams', '$q', 'markersService',
+      function ($stateParams, $q, markersService) {
+        var defer = $q.defer();
+
+        markersService.getMarkersDetails()
+          .then(function (response) {
+            defer.resolve(response);
+          })
+          .catch(function () {
+            defer.reject({
+              status: 'Not Found',
+              message: 'Cannot get markers.'
+            });
+          });
+
+        return defer.promise;
+      }
+    ];
   }
 
 })();

@@ -7,9 +7,9 @@
   angular.module('app.notifications.controllers')
     .controller('UserCtrl', UserCtrl);
 
-  UserCtrl.$inject = ['$injector', '$scope', '$stateParams', '$timeout', '$state', '$http', 'CONSTANTS'];
+  UserCtrl.$inject = ['$injector', '$scope', '$stateParams', '$timeout', '$state', 'userDetails'];
 
-  function UserCtrl($injector, $scope, $stateParams, $timeout, $state, $http, CONSTANTS) {
+  function UserCtrl($injector, $scope, $stateParams, $timeout, $state, userDetails) {
     /**
      * Injections
      */
@@ -29,7 +29,9 @@
      * Scope properties
      */
 
-     $scope.dataArrived = false;
+     $scope.dataHolder = {
+        user: userDetails
+      }
    
     /**
      * Scope methods
@@ -67,14 +69,8 @@
      * Init Method
      */
     (function init() {
-      //TODO: Replace 'mock_user.json' with the correct user ID ($stateParams.userId)
-      $http.get(CONSTANTS.API_URL + 'mock_user.json').then(function(response) {
-        $scope.dataHolder = {
-          user: response.data[0]
-        };
-        $scope.dataArrived = true;
         
-      });
+      // });
     })();
   }
 })();

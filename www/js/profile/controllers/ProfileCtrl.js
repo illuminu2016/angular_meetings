@@ -78,22 +78,13 @@
 
       if($scope.profile.mainImage === image) {
         $scope.targetImageExists = false;
-        
-        if($scope.profile.gender === "male") {
-          return '../img/man-black.png';
-        } else {
-          return '../img/woman-black.png';
-        }
+        return $scope.profile.gender === "male" ? '../img/man-black.png' : '../img/woman-black.png';
       }
     };
 
     $scope.getProfileImage = function() {
       if($scope.profile.userImages.length === 0) {
-        if($scope.profile.gender === "male") {
-          return '../img/man-black.png';
-        } else {
-          return '../img/woman-black.png';
-        }
+        return $scope.profile.gender === "male" ? '../img/man-black.png' : '../img/woman-black.png';
       } else {
         angular.forEach($scope.profile.userImages, function(image) {
           if(image.isMain === true) {
@@ -105,11 +96,7 @@
     };
 
     $scope.getDefaultImage = function(gender) {
-      if(gender === "male") {
-          return '../img/man-black.png';
-      } else {
-          return '../img/woman-black.png';
-      }
+      return gender === "male" ? '../img/man-black.png' : '../img/woman-black.png';
     }
 
     $scope.uploadImage = function() {
