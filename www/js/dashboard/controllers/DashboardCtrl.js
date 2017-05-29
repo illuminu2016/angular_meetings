@@ -72,10 +72,10 @@
             tempMarker = new google.maps.Marker({ position: tempCoords });
 
         if(circle.getBounds().contains(tempMarker.getPosition())) {
-          marker.options.isNear = 'true';
+          marker.options.isNear = true;
           return true;
         } else {
-          marker.options.isNear = 'false';
+          marker.options.isNear = false;
           return false;
         }
       }

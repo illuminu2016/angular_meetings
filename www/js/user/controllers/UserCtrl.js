@@ -43,11 +43,7 @@
 
       $scope.getProfileImage = function() {
         if($scope.dataHolder.user.userImages.length === 0) {
-          if($scope.dataHolder.user.gender === "male") {
-            return '../img/man-black.png';
-          } else {
-            return '../img/woman-black.png';
-          }
+          return $scope.dataHolder.user.gender === "male" ? '../img/man-black.png' : '../img/woman-black.png';
         } else {
           return $scope.dataHolder.user.mainImage.path;
         }

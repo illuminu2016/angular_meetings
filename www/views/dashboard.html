@@ -54,12 +54,12 @@
             </div>
             <div class="row user-window-bottom">
               <div class="col col-50">
-                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === 'false'}" ng-click="$parent.contactUser({{dataHolder.window.model.id}})">
+                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === false}" ng-click="$parent.contactUser({{dataHolder.window.model.id}})">
                   <i class="icon ion-chatbox-working"></i>
                 </a>
               </div>
               <div class="col col-50">
-                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === 'false'}" ng-click="$parent.viewUser({{dataHolder.window.model.id}})">
+                <a hef="#" class="infowindow-action" ng-class="{'hidden': dataHolder.window.model.options.isNear === false}" ng-click="$parent.viewUser({{dataHolder.window.model.id}})">
                   <i class="icon ion-eye"></i>
                 </a>
               </div>
