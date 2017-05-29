@@ -71,13 +71,7 @@
             tempCoords = new google.maps.LatLng(tempLat, tempLng),
             tempMarker = new google.maps.Marker({ position: tempCoords });
 
-        if(circle.getBounds().contains(tempMarker.getPosition())) {
-          marker.options.isNear = 'true';
-          return true;
-        } else {
-          marker.options.isNear = 'false';
-          return false;
-        }
+        marker.options.isNear = circle.getBounds().contains(tempMarker.getPosition());
       }
 
       

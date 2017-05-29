@@ -87,7 +87,7 @@
         return $scope.profile.gender === "male" ? '../img/man-black.png' : '../img/woman-black.png';
       } else {
         angular.forEach($scope.profile.userImages, function(image) {
-          if(image.isMain === true) {
+          if(image.isMain) {
             $scope.profile.mainImage = image;
           }
         });
